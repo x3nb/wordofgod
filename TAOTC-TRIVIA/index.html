@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Ark of the Covenant — A Scriptural Archive</title>
+<meta name="description" content="Articles, a searchable scripture index, a chronicle of the ark, and trivia — gathered from the Holy Scriptures concerning the ark of the testimony, the mercy seat, and the cherubim.">
+<meta name="theme-color" content="#04030a">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Ark of the Covenant — A Scriptural Archive">
+<meta property="og:description" content="Articles, a searchable scripture index, a chronicle of the ark, and trivia — gathered from the Holy Scriptures concerning the ark of the testimony, the mercy seat, and the cherubim.">
+<meta property="og:image" content="https://user.uploads.dev/file/3d9b27e038fc8d8bd291635ef7ec5d9d.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2213%22%20fill%3D%22%230d0b1a%22%2F%3E%3Cpath%20d%3D%22M22%2027c3-7%207-9.5%2010-9.5S39%2020%2042%2027%22%20fill%3D%22none%22%20stroke%3D%22%239a7bf0%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2215%22%20r%3D%222.6%22%20fill%3D%22%23e8cd8c%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%2231%22%20width%3D%2236%22%20height%3D%2219%22%20rx%3D%223%22%20fill%3D%22%23c9a552%22%2F%3E%3Cpath%20d%3D%22M14%2033h36%22%20stroke%3D%22%23efdda6%22%20stroke-width%3D%222.4%22%2F%3E%3Cpath%20d%3D%22M14%2038h36%22%20stroke%3D%22%237d6530%22%20stroke-width%3D%221.2%22%2F%3E%3Crect%20x%3D%2217%22%20y%3D%2236%22%20width%3D%225%22%20height%3D%227%22%20rx%3D%221.4%22%20fill%3D%22%2308070f%22%20opacity%3D%220.35%22%2F%3E%3C%2Fsvg%3E">
+</head>
+<body><style>
+  :root {
+    --void: #04030a;
+    --black: #08070f;
+    --panel: #0d0b1a;
+    --panel-2: #12102a;
+    --purple: #2a0f57;
+    --purple-mid: #4b2a9e;
+    --purple-lt: #9a7bf0;
+    --cobalt: #1f3fc9;
+    --cobalt-lt: #6b8bff;
+    --grey: #8b8ba0;
+    --grey-dk: #45445a;
+    --line: rgba(139, 139, 160, 0.22);
+    --ink: #e9e7f5;
+    --ink-dim: #b6b3cc;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1100px 620px at 12% -8%, rgba(75, 42, 158, 0.34), transparent 62%),
+      radial-gradient(900px 520px at 92% 6%, rgba(31, 63, 201, 0.22), transparent 60%),
+      radial-gradient(700px 500px at 50% 100%, rgba(42, 15, 87, 0.3), transparent 65%),
+      var(--void);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.72;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  body.locked { overflow: hidden; }
+
+  h1, h2, h3, h4, h5 { font-family: var(--serif); font-weight: 500; letter-spacing: 0.01em; margin: 0 0 0.5em; }
+
+  a { color: var(--cobalt-lt); text-decoration: none; }
+  a:hover { color: var(--purple-lt); }
+
+  #progressBar {
+    position: fixed; top: 0; left: 0; height: 2px; width: 100%;
+    transform: scaleX(0); transform-origin: 0 50%;
+    background: linear-gradient(90deg, var(--cobalt-lt), var(--purple-lt));
+    z-index: 60; transition: transform 0.12s linear;
+  }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(14px);
+    background: linear-gradient(180deg, rgba(6, 5, 14, 0.94), rgba(6, 5, 14, 0.7));
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: 1180px; margin: 0 auto; padding: 12px 22px;
+    display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 11px; font-family: var(--serif); font-size: 1.02rem; letter-spacing: 0.04em; color: var(--ink); }
+  .brand .mark {
+    width: 22px; height: 22px; flex: none; transform: rotate(45deg);
+    background: linear-gradient(135deg, var(--cobalt), var(--purple-mid));
+    border: 1px solid rgba(233, 231, 245, 0.5);
+    box-shadow: 0 0 14px rgba(107, 139, 255, 0.45);
+  }
+  .brand small { display: block; font-family: var(--sans); font-size: 0.6rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--grey); }
+  .nav-links { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+  .nav-link {
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.16em;
+    color: var(--grey); padding: 8px 11px; border-radius: 3px; border: 1px solid transparent;
+  }
+  .nav-link:hover { color: var(--ink); border-color: var(--line); }
+  .nav-link.active { color: var(--ink); border-color: rgba(107, 139, 255, 0.5); background: rgba(31, 63, 201, 0.14); }
+
+  /* ---------- LAYOUT ---------- */
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 22px; }
+  section { padding: 76px 0; border-top: 1px solid var(--line); }
+  section:first-of-type { border-top: 0; }
+
+  .sec-head { max-width: 760px; margin-bottom: 40px; }
+  .sec-mark {
+    font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.3em; color: var(--purple-lt);
+    display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+  }
+  .sec-mark::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(154, 123, 240, 0.6), transparent); }
+  .sec-head h2 { font-size: clamp(1.6rem, 3.4vw, 2.4rem); margin-bottom: 10px; }
+  .sec-head p { color: var(--ink-dim); margin: 0; }
+
+  /* ---------- HERO ---------- */
+  .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 48px; align-items: center; padding-top: 54px; }
+  .hero-art { position: relative; }
+  .hero-art svg { width: 100%; height: auto; display: block; filter: drop-shadow(0 26px 60px rgba(31, 63, 201, 0.18)); }
+  .hero-art::after {
+    content: ""; position: absolute; inset: -6% -4%; pointer-events: none;
+    background: radial-gradient(closest-side, rgba(107, 139, 255, 0.04), transparent 72%);
+  }
+  .plate-cap {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    flex-wrap: wrap; margin: 16px 0 0;
+  }
+  .plate-cap::before, .plate-cap::after { content: ""; width: 34px; height: 1px; }
+  .plate-cap::before { background: linear-gradient(90deg, transparent, var(--line)); }
+  .plate-cap::after { background: linear-gradient(90deg, var(--line), transparent); }
+  .plate-name { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.26em; color: var(--grey); }
+  .plate-ref { font-family: var(--serif); font-style: italic; font-size: 0.86rem; color: var(--purple-lt); }
+  .hero-mark { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.34em; color: var(--grey); margin-bottom: 16px; }
+  .hero h1 { font-size: clamp(2.1rem, 5.2vw, 3.5rem); line-height: 1.08; margin-bottom: 14px; text-wrap: balance; }
+  .hero h1 em { font-style: normal; display: block; font-size: 0.58em; color: var(--purple-lt); letter-spacing: 0.16em; text-transform: uppercase; margin-top: 12px; }
+  .hero-sub { color: var(--ink-dim); font-size: 1.04rem; max-width: 56ch; }
+  .hero-dedication {
+    border-left: 2px solid var(--cobalt); padding: 4px 0 4px 16px; color: var(--grey);
+    font-family: var(--serif); font-style: italic; margin-top: 22px; font-size: 0.98rem;
+  }
+  .hero-actions { display: flex; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
+
+  .fact-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin-top: 58px; background: var(--line); border: 1px solid var(--line); }
+  .fact { background: var(--black); padding: 18px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .fact-k { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--purple-lt); }
+  .fact-v { font-family: var(--serif); font-size: 1rem; line-height: 1.35; }
+  .fact-r { font-size: 0.72rem; color: var(--grey); margin-top: auto; }
+
+  /* ---------- BUTTONS ---------- */
+  .btn {
+    display: inline-block; font-family: var(--sans); font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.16em; padding: 13px 22px; border-radius: 2px; cursor: pointer;
+    border: 1px solid var(--line); background: transparent; color: var(--ink); transition: 0.18s; white-space: nowrap;
+  }
+  .btn-primary { background: linear-gradient(120deg, var(--cobalt), var(--purple-mid)); border-color: rgba(233, 231, 245, 0.32); }
+  .btn-primary:hover { box-shadow: 0 0 26px rgba(107, 139, 255, 0.45); color: #fff; }
+  .btn-ghost:hover { border-color: var(--purple-lt); color: var(--purple-lt); }
+
+  /* ---------- CARDS ---------- */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 20px; }
+  .card {
+    background: linear-gradient(165deg, var(--panel-2), var(--black) 65%);
+    border: 1px solid var(--line); padding: 26px 24px 22px; cursor: pointer;
+    display: flex; flex-direction: column; gap: 10px; position: relative; overflow: hidden;
+    transition: transform 0.22s, border-color 0.22s, box-shadow 0.22s;
+  }
+  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 1px; background: linear-gradient(90deg, var(--cobalt), transparent); }
+  .card:hover, .card:focus-visible { transform: translateY(-4px); border-color: rgba(107, 139, 255, 0.5); box-shadow: 0 20px 44px rgba(0, 0, 0, 0.6); outline: none; }
+  .card-no { font-family: var(--serif); font-size: 0.78rem; letter-spacing: 0.28em; color: var(--purple-lt); }
+  .card-title { font-size: 1.2rem; margin: 0; }
+  .card-sub { color: var(--grey); font-size: 0.86rem; margin: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .chip { font-size: 0.63rem; letter-spacing: 0.08em; color: var(--ink-dim); border: 1px solid var(--line); padding: 3px 8px; border-radius: 2px; background: rgba(18, 16, 42, 0.6); }
+  .card-cta { margin-top: auto; padding-top: 14px; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--cobalt-lt); }
+  .card:hover .card-cta { color: var(--purple-lt); }
+
+  /* ---------- SCRIPTURE INDEX ---------- */
+  .scr-tools { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-bottom: 26px; }
+  #scriptSearch {
+    flex: 1 1 300px; background: var(--panel); border: 1px solid var(--line); color: var(--ink);
+    font-family: var(--sans); font-size: 0.92rem; padding: 13px 15px; border-radius: 2px;
+  }
+  #scriptSearch:focus { outline: none; border-color: var(--cobalt-lt); box-shadow: 0 0 0 3px rgba(31, 63, 201, 0.18); }
+  #scriptCount { font-size: 0.76rem; color: var(--grey); letter-spacing: 0.06em; }
+  .scr-group { margin-bottom: 26px; }
+  .scr-group-h { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.26em; color: var(--purple-lt); border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 4px; font-family: var(--sans); }
+  details.verse { border-bottom: 1px solid rgba(139, 139, 160, 0.12); }
+  details.verse summary {
+    display: flex; justify-content: space-between; gap: 14px; align-items: baseline;
+    padding: 13px 4px; cursor: pointer; font-family: var(--serif); font-size: 1.02rem; list-style: none;
+  }
+  details.verse summary::-webkit-details-marker { display: none; }
+  details.verse summary:hover { color: var(--purple-lt); }
+  .v-open { font-family: var(--sans); font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--grey-dk); }
+  details.verse[open] .v-open { color: var(--cobalt-lt); }
+  .v-text {
+    margin: 0 0 16px; padding: 16px 18px; background: rgba(18, 16, 42, 0.55);
+    border-left: 2px solid var(--cobalt); color: var(--ink-dim);
+    font-family: var(--serif); font-size: 1.02rem; line-height: 1.85;
+  }
+  .empty { color: var(--grey); font-style: italic; }
+
+  /* ---------- TIMELINE ---------- */
+  .timeline { list-style: none; margin: 0; padding: 0 0 0 34px; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 1px; background: linear-gradient(180deg, var(--cobalt), var(--purple), transparent); }
+  .tl-item { position: relative; margin-bottom: 22px; }
+  .tl-dot { position: absolute; left: -34px; top: 22px; width: 15px; height: 15px; transform: rotate(45deg); background: var(--black); border: 1px solid var(--cobalt-lt); }
+  .tl-item:hover .tl-dot { background: var(--purple-mid); }
+  .tl-card { background: linear-gradient(150deg, var(--panel-2), var(--black)); border: 1px solid var(--line); padding: 20px 22px; }
+  .tl-when { font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--purple-lt); }
+  .tl-card h4 { margin: 8px 0 6px; font-size: 1.12rem; }
+  .tl-card p { margin: 0 0 8px; color: var(--ink-dim); font-size: 0.94rem; }
+  .tl-ref { font-size: 0.74rem; color: var(--grey); font-family: var(--serif); font-style: italic; }
+
+  /* ---------- TRIVIA ---------- */
+  .gate {
+    border: 1px solid rgba(107, 139, 255, 0.34); background: linear-gradient(160deg, rgba(31, 63, 201, 0.14), rgba(42, 15, 87, 0.24) 55%, var(--black));
+    padding: 38px 30px; max-width: 620px;
+  }
+  .gate-mark { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.3em; color: var(--purple-lt); margin: 0 0 10px; }
+  .gate h3 { font-size: 1.5rem; margin-bottom: 8px; }
+  .gate-text { color: var(--ink-dim); margin-top: 0; }
+  .gate form { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .gate label { font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--grey); margin-top: 10px; }
+  .gate input, .gate select {
+    background: rgba(4, 3, 10, 0.7); border: 1px solid var(--line); color: var(--ink);
+    font-family: var(--sans); font-size: 1rem; padding: 12px 14px; border-radius: 2px;
+  }
+  .gate input:focus, .gate select:focus { outline: none; border-color: var(--cobalt-lt); }
+  .gate button { margin-top: 16px; align-self: flex-start; }
+  .gate-error { color: #d98aa6; font-size: 0.82rem; margin: 6px 0 0; min-height: 1.1em; }
+  .gate-note { font-size: 0.74rem; color: var(--grey-dk); margin: 18px 0 0; }
+
+  .quiz-area { max-width: 820px; }
+  .greet { font-family: var(--serif); font-size: 1.34rem; margin-bottom: 22px; }
+  .greet span { color: var(--purple-lt); }
+  .change {
+    font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey);
+    background: none; border: 1px solid var(--line); padding: 5px 10px; border-radius: 2px; cursor: pointer; margin-left: 14px; vertical-align: middle;
+  }
+  .change:hover { color: var(--ink); border-color: var(--purple-lt); }
+  .quiz-intro { border: 1px solid var(--line); background: var(--panel); padding: 26px; }
+  .quiz-intro h4 { margin-top: 0; font-size: 1.2rem; }
+  .quiz-intro p { color: var(--ink-dim); font-size: 0.95rem; }
+
+  .quiz-play { border: 1px solid var(--line); background: linear-gradient(160deg, var(--panel-2), var(--black)); padding: 20px 22px; }
+  .quiz-bar { height: 3px; background: rgba(139, 139, 160, 0.2); margin-bottom: 18px; }
+  #quizProgress { height: 100%; width: 0; background: linear-gradient(90deg, var(--cobalt-lt), var(--purple-lt)); transition: width 0.3s; }
+  .quiz-meta { display: flex; justify-content: space-between; gap: 12px; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--grey); flex-wrap: wrap; }
+  .quiz-who { font-family: var(--serif); font-style: italic; color: var(--purple-lt); margin: 14px 0 0; font-size: 0.92rem; }
+  .quiz-q { font-size: 1.22rem; margin: 12px 0 16px; line-height: 1.38; }
+  .quiz-q:focus { outline: none; }
+  .opts { display: flex; flex-direction: column; gap: 8px; }
+  .opt {
+    display: flex; gap: 14px; align-items: center; text-align: left; width: 100%;
+    background: rgba(4, 3, 10, 0.55); border: 1px solid var(--line); color: var(--ink);
+    font-family: var(--sans); font-size: 0.96rem; padding: 12px 15px; cursor: pointer; transition: 0.16s;
+  }
+  .opt:hover:not(:disabled) { border-color: var(--cobalt-lt); background: rgba(31, 63, 201, 0.14); }
+  .opt:disabled { cursor: default; opacity: 0.72; }
+  .opt-k {
+    flex: none; width: 26px; height: 26px; display: grid; place-items: center;
+    border: 1px solid var(--line); font-size: 0.68rem; letter-spacing: 0.1em; color: var(--grey);
+  }
+  .opt.is-correct { border-color: var(--cobalt-lt); background: linear-gradient(90deg, rgba(31, 63, 201, 0.34), rgba(42, 15, 87, 0.2)); opacity: 1; }
+  .opt.is-correct .opt-k { border-color: var(--cobalt-lt); color: var(--ink); }
+  .opt.is-correct::after { content: "correct"; margin-left: auto; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cobalt-lt); }
+  .opt.is-wrong { border-color: #6d4560; opacity: 0.9; }
+  .opt.is-wrong::after { content: "not this"; margin-left: auto; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #c98aa8; }
+
+  .why { margin-top: 16px; border-left: 2px solid var(--purple-lt); padding: 4px 0 4px 16px; }
+  .why-verdict { font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--purple-lt); margin: 0 0 8px; }
+  .why-text { color: var(--ink-dim); margin: 0 0 8px; font-size: 0.96rem; }
+  .why-ref { font-family: var(--serif); font-style: italic; font-size: 0.86rem; color: var(--grey); }
+  #quizNext { margin-top: 16px; }
+
+  .quiz-result { border: 1px solid rgba(107, 139, 255, 0.32); background: linear-gradient(160deg, rgba(31, 63, 201, 0.16), var(--black)); padding: 32px 28px; }
+  .result-mark { font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--purple-lt); }
+  .result-who { font-size: 1.3rem; margin: 10px 0 4px; }
+  .result-score { font-family: var(--serif); font-size: 3rem; line-height: 1; margin: 8px 0; }
+  .result-score span { font-size: 1rem; color: var(--grey); }
+  .result-rank { font-size: 1.14rem; color: var(--cobalt-lt); margin: 6px 0; }
+  .result-note { color: var(--ink-dim); margin: 0 0 18px; }
+  .result-missed { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 8px; }
+  .result-missed h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--grey); font-family: var(--sans); }
+  .result-missed ul { list-style: none; padding: 0; margin: 10px 0 0; }
+  .result-missed li { padding: 9px 0; border-bottom: 1px solid rgba(139, 139, 160, 0.12); font-size: 0.92rem; display: flex; justify-content: space-between; gap: 16px; }
+  .result-missed em { font-family: var(--serif); color: var(--purple-lt); font-style: italic; white-space: nowrap; font-size: 0.84rem; }
+  .result-perfect { color: var(--cobalt-lt); font-family: var(--serif); font-style: italic; }
+  .result-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+
+  /* ---------- READER ---------- */
+  .reader { position: fixed; inset: 0; z-index: 80; background: rgba(4, 3, 10, 0.86); backdrop-filter: blur(10px); overflow-y: auto; padding: 40px 20px 80px; }
+  .reader-inner { max-width: 780px; margin: 0 auto; background: linear-gradient(170deg, var(--panel-2), var(--black) 45%); border: 1px solid var(--line); padding: 44px 46px 52px; position: relative; }
+  .reader-close {
+    position: absolute; top: 14px; right: 14px; background: none; border: 1px solid var(--line); color: var(--grey);
+    font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 8px 12px; cursor: pointer;
+  }
+  .reader-close:hover { color: var(--ink); border-color: var(--purple-lt); }
+  .reader-mark { font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--purple-lt); }
+  .reader-title { font-size: clamp(1.5rem, 3.6vw, 2.2rem); margin: 12px 0 6px; }
+  .reader-sub { color: var(--grey); font-style: italic; margin: 0 0 14px; }
+  .reader-text { margin-top: 26px; }
+  .reader-text p { color: var(--ink-dim); margin: 0 0 1.15em; }
+  .reader-text > p:first-child::first-letter {
+    font-family: var(--serif); font-size: 3.3em; line-height: 0.86; float: left;
+    padding: 6px 12px 0 0; color: var(--purple-lt);
+  }
+  .reader-text em { color: var(--ink); font-style: italic; }
+  .blk-h { font-size: 1.14rem; color: var(--ink); margin: 30px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .reader-text blockquote { margin: 24px 0; padding: 18px 22px; background: rgba(31, 63, 201, 0.1); border-left: 2px solid var(--cobalt-lt); }
+  .reader-text blockquote p { font-family: var(--serif); font-size: 1.12rem; line-height: 1.8; color: var(--ink); margin: 0 0 8px; }
+  .reader-text blockquote cite { font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cobalt-lt); font-style: normal; }
+  .blk-note { display: block; margin: 24px 0 0; padding: 16px 18px; border: 1px dashed rgba(154, 123, 240, 0.4); color: var(--purple-lt); font-family: var(--serif); font-style: italic; font-size: 1rem; }
+  .blk-list { padding-left: 20px; margin: 0 0 18px; }
+  .blk-list li { margin-bottom: 8px; color: var(--ink-dim); }
+  .blk-list li::marker { color: var(--purple-lt); }
+  .tiers { display: flex; flex-direction: column; gap: 14px; margin: 8px 0 22px; }
+  .tier { border: 1px solid var(--line); border-left: 2px solid var(--purple-lt); background: rgba(18, 16, 42, 0.6); padding: 16px 18px; }
+  .tier-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+  .tier-name { font-size: 0.64rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cobalt-lt); }
+  .tier-badge { font-size: 0.7rem; color: var(--grey); font-style: italic; }
+  .tier h5 { margin: 8px 0 6px; font-size: 1.06rem; }
+  .tier p { margin: 0; font-size: 0.95rem; }
+  .reader-end { text-align: center; color: var(--grey-dk); font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase; margin-top: 40px; }
+
+  /* ---------- FOOTER ---------- */
+  .dedication-band { padding: 60px 0; text-align: center; }
+  .dedication-band p { font-family: var(--serif); font-size: clamp(1.05rem, 2.4vw, 1.5rem); line-height: 1.6; color: var(--ink); max-width: 760px; margin: 0 auto 12px; }
+  .dedication-band small { color: var(--grey); letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.6rem; }
+  footer.site { border-top: 1px solid var(--line); padding: 30px 0 46px; color: var(--grey); font-size: 0.8rem; }
+  footer.site .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  footer.site p { margin: 0 0 6px; max-width: 62ch; }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s, transform 0.6s; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; gap: 30px; }
+    .hero-art { max-width: 520px; }
+    .fact-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .reader-inner { padding: 34px 22px 40px; }
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    html { scroll-padding-top: 152px; }
+    section { padding: 56px 0; }
+    .fact-row { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .hero-actions .btn { text-align: center; }
+    .nav-inner { gap: 10px; padding: 10px 16px; }
+    .nav-links { margin-left: 0; width: 100%; justify-content: flex-start; }
+    .nav-link { padding: 6px 8px; font-size: 0.6rem; }
+    .gate { padding: 26px 20px; }
+    .reader { padding: 14px 10px 60px; }
+    .result-missed li { flex-direction: column; gap: 4px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+
+<div id="progressBar"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span>The Ark of the Covenant<small>A Scriptural Archive</small></span>
+    </div>
+    <nav class="nav-links" aria-label="Sections">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#articles">Articles</a>
+      <a class="nav-link" href="#scriptures">Scripture Index</a>
+      <a class="nav-link" href="#timeline">Timeline</a>
+      <a class="nav-link" href="#trivia">Trivia</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home">
+    <div class="wrap">
+      <div class="hero">
+        <div class="hero-art reveal">
+          <div id="arkArtCtn"></div>
+          <p class="plate-cap"><span class="plate-name">The ark of the testimony</span><span class="plate-ref">Exodus 25:10&ndash;22</span></p>
+        </div>
+        <div class="hero-copy reveal">
+          <p class="hero-mark">Dedicated to the Holy Scriptures</p>
+          <h1>The Ark of the Covenant<em>The ark of the testimony</em></h1>
+          <p class="hero-sub" id="heroSub"></p>
+          <p class="hero-dedication" id="heroDedication"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#articles">Begin with the articles</a>
+            <a class="btn btn-ghost" href="#trivia">Open the trivia</a>
+          </div>
+        </div>
+      </div>
+      <div class="fact-row reveal" id="factRow"></div>
+    </div>
+  </section>
+
+  <section id="articles">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-mark">Part One</p>
+        <h2>Articles from the Holy Scriptures</h2>
+        <p>
+          <span id="countArticles">16</span> studies tracing the ark from the pattern shown on the mount to the last
+          sight of it in the temple in heaven — read from Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Samuel,
+          Kings, Chronicles, the Psalms, the Prophets, the Gospels, the epistles and the Revelation.
+        </p>
+      </div>
+      <div class="grid" id="articleGrid"></div>
+    </div>
+  </section>
+
+  <section id="scriptures">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-mark">Part Two</p>
+        <h2>The Scripture Index</h2>
+        <p>
+          <span id="countScriptures">0</span> passages gathered in one place and grouped by theme. Search by
+          reference, by word, or by theme such as <em>cherubim</em>, <em>mercy seat</em>, <em>gold</em>,
+          <em>blood</em>, or <em>captivity</em>. Open any passage to read it in full.
+        </p>
+      </div>
+      <div class="scr-tools reveal">
+        <input id="scriptSearch" type="search" placeholder="Search the index — a word, a theme, or a reference such as 1 Samuel 6" aria-label="Search the scripture index" />
+        <span id="scriptCount"></span>
+      </div>
+      <div id="scriptureList" class="reveal"></div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-mark">Part Three</p>
+        <h2>A Chronicle of the Ark</h2>
+        <p>
+          From Sinai to the silence after the burning of the temple, and to the sight of it once more in
+          heaven. Each entry carries the passage from which it is drawn.
+        </p>
+      </div>
+      <ol class="timeline reveal" id="timelineList"></ol>
+    </div>
+  </section>
+
+  <section id="trivia">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="sec-mark">Part Four</p>
+        <h2>The Trivia of the Testimony</h2>
+        <p>
+          <span id="countTrivia">0</span> questions drawn from the passages in this archive, each answered with
+          its reasoning and its reference.
+        </p>
+      </div>
+
+      <div id="gate" class="gate reveal" hidden>
+        <p class="gate-mark">The archive asks first</p>
+        <h3>What would you like to be called?</h3>
+        <p class="gate-text">
+          Before the trivia is opened, the archive asks the reader for a name — so that the questions may be
+          put to you personally, and your result rendered in your own name.
+        </p>
+        <form id="gateForm" novalidate>
+          <label for="viewerName">Your name</label>
+          <input id="viewerName" type="text" maxlength="40" autocomplete="off" placeholder="A name, a first name, or one of your choosing" />
+          <label for="viewerTitle">How shall you be addressed?</label>
+          <select id="viewerTitle"></select>
+          <p class="gate-error" id="gateError" role="alert"></p>
+          <button class="btn btn-primary" type="submit">Open the trivia</button>
+        </form>
+        <p class="gate-note">Kept only in this browser. Nothing is sent anywhere, and you may change it at any time.</p>
+      </div>
+
+      <div id="quizArea" class="quiz-area" hidden>
+        <p class="greet">Well met, <span id="greetWho"></span>.<button class="change" id="changeName" type="button">Change name</button></p>
+
+        <div id="quizIntro" class="quiz-intro" hidden>
+          <h4>The questions are ready.</h4>
+          <p>
+            You will be asked <span id="quizIntroCount">18</span> questions in a different order each time. Every answer
+            is followed by its reasoning and the passage it comes from — so a wrong answer still teaches.
+          </p>
+          <button class="btn btn-primary" id="quizStart" type="button">Begin</button>
+        </div>
+
+        <div id="quizPlay" class="quiz-play" hidden>
+          <div class="quiz-bar"><div id="quizProgress"></div></div>
+          <div class="quiz-meta">
+            <span id="quizCount"></span>
+            <span id="quizScore"></span>
+          </div>
+          <p class="quiz-who" id="quizWho"></p>
+          <h3 class="quiz-q" id="quizQ" tabindex="-1"></h3>
+          <div class="opts" id="quizOpts"></div>
+          <div class="why" id="quizWhy" role="status" aria-live="polite" hidden></div>
+          <button class="btn btn-primary" id="quizNext" type="button" hidden></button>
+        </div>
+
+        <div id="quizResult" class="quiz-result" hidden></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="dedication-band">
+  <div class="wrap">
+    <p>
+      “And there I will meet with thee, and I will commune with thee from above the mercy seat,
+      from between the two cherubims.”
+    </p>
+    <small>Exodus 25:22</small>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <p>Scripture quotations are from the Authorised (King James) Version of the Holy Bible, which is in the public domain.</p>
+      <p>Material outside the canon is labelled where it appears: deuterocanonical, ancient tradition, or modern claim. The archive keeps those tiers distinct on purpose.</p>
+    </div>
+    <div>
+      <p>Articles: <span id="footArticles">0</span> · Passages: <span id="footScriptures">0</span> · Questions: <span id="footTrivia">0</span></p>
+      <p>A Scriptural Archive · <span id="year"></span></p>
+    </div>
+  </div>
+</footer>
+
+<div id="reader" class="reader" hidden role="dialog" aria-modal="true" aria-label="Article reader">
+  <div class="reader-inner">
+    <button class="reader-close" id="readerClose" type="button">Close</button>
+    <div id="readerBody"></div>
+  </div>
+</div>
+
+<script type="module">
+const SITE = {
+  title: "The Ark of the Covenant",
+  tagline: "A Scriptural Archive",
+  subtitle:
+    "Articles, testimonies and trivia gathered from the Holy Scriptures concerning the ark of the testimony — the chest of acacia wood and pure gold where mercy and law met, and from between whose cherubim the voice of the LORD was heard.",
+  dedication:
+    "Dedicated to the study of the Holy Scriptures, and to all who keep the history of the archives and the words of the prophets.",
+};
+
+const HERO_FACTS = [
+  { k: "Dimensions", v: "2½ × 1½ × 1½ cubits", r: "Exodus 25:10" },
+  { k: "Materials", v: "Shittim wood, gold within and without", r: "Exodus 25:11" },
+  { k: "Contents", v: "The tables of the testimony", r: "Deuteronomy 10:5" },
+  { k: "Access", v: "Once a year, with blood", r: "Leviticus 16:2, 14" },
+];
+
+const ARTICLES = [
+  {
+    id: "pattern-in-the-mount",
+    no: "I",
+    title: "The Pattern Shown in the Mount",
+    subtitle: "Why the ark was never a matter of human design",
+    refs: ["Exodus 25:8-9, 40", "Hebrews 8:5", "Acts 7:44"],
+    body: [
+      { t: "p", x: "Before a single plank of acacia was cut, the ark already existed as a pattern — shown, not imagined. Moses received on Sinai not merely a commandment to build, but a heavenly blueprint: <em>According to all that I shew thee, after the pattern of the tabernacle, and the pattern of all the instruments thereof, even so shall ye make it.</em>" },
+      { t: "q", x: "And let them make me a sanctuary; that I may dwell among them.", ref: "Exodus 25:8" },
+      { t: "p", x: "The word rendered <em>pattern</em> (Hebrew <em>tabnith</em>) means a construction model, a figure or likeness. The New Testament returns to it twice, and both times to make the same point: the earthly sanctuary served <em>unto the example and shadow of heavenly things</em> (Hebrews 8:5), and the tabernacle was made <em>according to the fashion that he had seen</em> (Acts 7:44)." },
+      { t: "h", x: "What the pattern implies" },
+      { t: "list", items: [
+        "The ark was God's initiative, not Israel's. He asked for the sanctuary; He supplied the design.",
+        "Its design is didactic. Every measurement, material and limitation instructs the reader before it furnishes a room.",
+        "The pattern precedes the building. In Scripture, redemption is planned before it is enacted.",
+      ] },
+      { t: "p", x: "Hebrews draws its logic straight from this: if the copy is glorious, how much more the original. The argument of Hebrews 9 moves from the furniture of the ark — the lampstand, the table, the golden censer, the cherubim of glory — to the greater and more perfect ministry of Christ." },
+      { t: "note", x: "Read with this framing, the ark is not a relic to be found but a sermon to be heard: the shape of mercy, given by God, on His own terms." },
+    ],
+  },
+  {
+    id: "acacia-and-gold",
+    no: "II",
+    title: "Acacia Wood and Pure Gold",
+    subtitle: "The materials, measures and craft of the ark in Exodus 25 and 37",
+    refs: ["Exodus 25:10-16", "Exodus 37:1-9", "Exodus 40:20-21"],
+    body: [
+      { t: "p", x: "The ark itself was a chest — two cubits and a half its length, a cubit and a half its breadth, and a cubit and a half its height. On the ordinary reckoning of a cubit at roughly eighteen inches, that is about a metre and a quarter long, and roughly seventy centimetres wide and high: a carried chest, not a monument." },
+      { t: "q", x: "And they shall make an ark of shittim wood: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof, and a cubit and a half the height thereof.", ref: "Exodus 25:10" },
+      { t: "h", x: "The wood and the gold" },
+      { t: "p", x: "Shittim wood is acacia — the hard, close-grained timber of the desert, resistant to rot and insect, the only substantial tree of the wilderness. It was overlaid with pure gold <em>within and without</em>, and a crown or moulding of gold was made upon it round about (Exodus 25:11)." },
+      { t: "list", items: [
+        "Four rings of gold, cast for the four corners — two on one side and two on the other (25:12).",
+        "Staves of shittim wood overlaid with gold, put into the rings (25:13-14).",
+        "The staves were <em>never</em> to be taken from the rings. The ark was built to travel (25:15).",
+      ] },
+      { t: "q", x: "And Bezaleel made the ark of shittim wood: two cubits and a half was the length of it, and a cubit and a half the breadth of it, and a cubit and a half the height of it.", ref: "Exodus 37:1" },
+      { t: "p", x: "The work was done by Bezaleel, of the tribe of Judah, and Aholiab, filled with the Spirit of God for the craft (Exodus 31:1-6; 35:30-35). When the tabernacle was reared, Moses <em>put the testimony into the ark, and set the staves on the ark, and put the mercy seat above upon the ark</em> (Exodus 40:20)." },
+      { t: "note", x: "Pause over the gold <em>within and without</em>. The interior was hidden from every eye in Israel. Reverence was required precisely where no one could see — the detail of a Maker who looks on the inward part." },
+    ],
+  },
+  {
+    id: "what-lay-within",
+    no: "III",
+    title: "What Lay Within: The Testimonies",
+    subtitle: "The manna, the rod, the tables — and the layers of the record",
+    refs: ["Hebrews 9:4", "Exodus 16:32-34", "Numbers 17:10", "Deuteronomy 10:1-5", "1 Kings 8:9", "Deuteronomy 31:26"],
+    body: [
+      { t: "p", x: "Hebrews gives the classic inventory of the ark's contents: <em>the golden pot that had manna, and Aaron's rod that budded, and the tables of the covenant</em> (Hebrews 9:4)." },
+      { t: "h", x: "Manna — bread from heaven" },
+      { t: "p", x: "A pot holding an omer of the manna was laid up before the LORD, to be kept for Israel's generations (Exodus 16:32-34) — a standing witness against murmuring, and a standing witness to provision." },
+      { t: "h", x: "Aaron's rod — a dead branch that lived" },
+      { t: "p", x: "When the tribes contended for the priesthood, Aaron's rod was laid before the testimony and blossomed overnight. It was brought back before the testimony <em>to be kept for a token against the rebels</em> (Numbers 17:10)." },
+      { t: "h", x: "The tables of the covenant" },
+      { t: "p", x: "The second pair of stone tables, written by the finger of God, were carried up the mount and placed in the ark Moses had made: <em>and there they be, as the LORD commanded me</em> (Deuteronomy 10:5; cp. 10:4)." },
+      { t: "p", x: "And yet 1 Kings 8:9 states that at the dedication of Solomon's temple <em>there was nothing in the ark save the two tables of stone</em>. The careful reader holds the layers together rather than flattening them. Several readings are possible: that the manna and the rod did not endure; that they were removed; or that the writer's concern is the covenant document that defines the ark." },
+      { t: "p", x: "A further layer: Deuteronomy 31:26 commands that <em>the book of the law</em> be placed <em>in the side of the ark</em> — beside it, as a witness — not within it." },
+      { t: "note", x: "The ark teaches us how to read: not by forcing a single tidy list, but by taking each witness as it stands, and letting the abundance of the testimony do its work." },
+    ],
+  },
+  {
+    id: "between-the-cherubim",
+    no: "IV",
+    title: "Between the Cherubim",
+    subtitle: "The ark as the footstool of an invisible King",
+    refs: ["Exodus 25:17-22", "Numbers 7:89", "1 Samuel 4:4", "1 Chronicles 28:2", "Psalm 99:1, 5", "Psalm 132:7-8", "Isaiah 37:16"],
+    body: [
+      { t: "p", x: "Above the chest lay the mercy seat (<em>kapporeth</em>) — a lid of pure gold, two cubits and a half long and a cubit and a half broad. From its two ends rose two cherubim of beaten work, their wings stretched on high to cover the seat, their faces turned one to another and toward the seat (Exodus 25:17-20)." },
+      { t: "q", x: "And there I will meet with thee, and I will commune with thee from above the mercy seat, from between the two cherubims which are upon the ark of the testimony.", ref: "Exodus 25:22" },
+      { t: "p", x: "Numbers records the fulfilment in the wilderness: when Moses went into the tabernacle to speak with God, <em>he heard the voice of one speaking unto him from off the mercy seat that was upon the ark of testimony, from between the two cherubims</em> (Numbers 7:89)." },
+      { t: "h", x: "The throne language of the Psalms" },
+      { t: "list", items: [
+        "The LORD reigneth; let the people tremble: he sitteth between the cherubims (Psalm 99:1).",
+        "Exalt ye the LORD our God, and worship at his footstool; for he is holy (Psalm 99:5).",
+        "We will go into his tabernacles: we will worship at his footstool. Arise, O LORD, into thy rest; thou, and the ark of thy strength (Psalm 132:7-8).",
+        "David called it the house of rest for the ark of the covenant of the LORD, and for the footstool of our God (1 Chronicles 28:2).",
+      ] },
+      { t: "p", x: "The picture is coherent: heaven is the throne, the ark is the footstool, and the earth the platform beneath it (cp. Isaiah 66:1). The ark was never the deity; it was the place of the meeting, the earthly warrant for a heavenly claim." },
+      { t: "note", x: "Note carefully what Scripture never says. The ark is never called God, never prayed to, never carried into battle as an object of faith in itself. Israel's recurring temptation was to turn a throne into a talisman — and the narrative of 1 Samuel is written to expose exactly that." },
+    ],
+  },
+  {
+    id: "the-name-between-the-cherubim",
+    no: "V",
+    title: "The Name That Dwells Between the Cherubim",
+    subtitle: "The ark, the Name of the LORD, and the titles of His throne",
+    refs: ["Exodus 20:24", "Deuteronomy 12:5, 11", "1 Chronicles 13:6", "1 Kings 8:29", "Psalm 80:1", "Jeremiah 7:12"],
+    body: [
+      { t: "p", x: "The ark has a second work besides housing the testimony: it names a place. Scripture speaks repeatedly of the place where the LORD has chosen to put His name, and the ark is described as the object upon which that Name is called. When David went up to fetch it, the narrative identifies it not by its measurements but by its Lord — the ark <em>whose name is called by the name of the LORD of hosts that dwelleth between the cherubims</em> (2 Samuel 6:2; 1 Chronicles 13:6)." },
+      { t: "q", x: "In all places where I record my name I will come unto thee, and I will bless thee.", ref: "Exodus 20:24" },
+      { t: "h", x: "A Name, and not a likeness" },
+      { t: "p", x: "The second commandment forbade any likeness of God, and yet God commanded an object of wood and gold. The difference is the whole argument of Israel's worship: the ark is never a portrait. It shows no form of the Almighty, no face, no figure. It bears His <em>Name</em> — which is to say, it marks a place He has promised to attend." },
+      { t: "list", items: [
+        "Deuteronomy 12:5 — <em>unto the place which the LORD your God shall choose out of all your tribes to put his name there, even unto his habitation shall ye seek.</em>",
+        "Deuteronomy 12:11 — <em>there shall be a place which the LORD your God shall choose to cause his name to dwell there.</em>",
+        "1 Kings 8:29 — <em>that thine eyes may be open toward this house night and day... for thou saidst, My name shall be there.</em>",
+        "Jeremiah 7:12 — <em>the place which was in Shiloh, where I set my name at the first.</em>",
+      ] },
+      { t: "h", x: "The LORD of hosts that dwelleth between the cherubims" },
+      { t: "p", x: "The title <em>LORD of hosts</em> — the LORD of the armies of heaven and earth — is bound in the Old Testament to the cherubim throne. Hannah prays to <em>the LORD of hosts</em> at Shiloh (1 Samuel 1:3, 11). The messenger tells Eli that <em>Israel is fled before the Philistines</em>, and names the object by the same title (1 Samuel 4:4). Hezekiah spreads Sennacherib's letter before the LORD as <em>the LORD of hosts, God of Israel, that dwellest between the cherubims</em> (Isaiah 37:16)." },
+      { t: "q", x: "Give ear, O Shepherd of Israel, thou that leadest Joseph like a flock; thou that dwellest between the cherubims, shine forth.", ref: "Psalm 80:1" },
+      { t: "p", x: "Which is why the ark's cherubim are not ornament. They are the visible creatures of an invisible throne — the same living ones that Ezekiel sees by the river Chebar, with the wheels and the fire (Ezekiel 1:5-14; 10:20), and the same four living creatures around the throne of the Revelation (Revelation 4:6-8). The ark gave Israel a vocabulary for the throne before it was given a picture of the throne." },
+      { t: "h", x: "Holy ground — and how it is lost" },
+      { t: "p", x: "Where the ark is, there the Name is; which is why the city is called holy, and why the loss of the ark is described as the departure of glory rather than the loss of an heirloom. And the prophets name the danger precisely: to treat the Name as though the object controlled it. <em>Trust ye not in lying words, saying, The temple of the LORD, the temple of the LORD, the temple of the LORD, are these</em> (Jeremiah 7:4); <em>yet will they lean upon the LORD, and say, Is not the LORD among us?</em> (Micah 3:11)." },
+      { t: "note", x: "The ark does not guarantee the Presence; the Presence is what made the ark holy. An object that bears a Name may still be forfeited by those who carry it — a lesson the ark taught Israel more than once." },
+    ],
+  },
+  {
+    id: "veil-and-blood",
+    no: "VI",
+    title: "The Veil, the Priest, and the Blood",
+    subtitle: "The ark and the Day of Atonement, and its reading in Hebrews",
+    refs: ["Leviticus 16:2, 13-15", "Hebrews 9:1-12, 24", "Exodus 40:21"],
+    body: [
+      { t: "p", x: "Within the tabernacle a veil separated the holy place from the holiest of all, and behind it stood the ark. Of the high priest it was said: <em>that he come not at all times into the holy place within the vail before the mercy seat, which is upon the ark; that he die not: for I will appear in the cloud upon the mercy seat</em> (Leviticus 16:2)." },
+      { t: "p", x: "Once a year, on the Day of Atonement, Aaron came with a censer of burning incense that the cloud might cover the mercy seat, and with the blood of the bullock and of the goat, which he sprinkled upon the mercy seat eastward, and before the mercy seat seven times (Leviticus 16:13-14)." },
+      { t: "h", x: "The name of the lid" },
+      { t: "p", x: "The Hebrew <em>kapporeth</em> comes from <em>kaphar</em> — to cover, to make atonement. The ark's covering is named for what it did. It is the mercy seat in the most literal sense: the place where the offence is covered, and where God is pleased to speak." },
+      { t: "q", x: "Neither by the blood of goats and calves, but by his own blood he entered in once into the holy place, having obtained eternal redemption for us.", ref: "Hebrews 9:12" },
+      { t: "p", x: "Hebrews reads the whole rite forward. The high priest entered a sanctuary <em>made with hands</em>; Christ entered <em>into heaven itself, now to appear in the presence of God for us</em> (Hebrews 9:24). The furniture of the ark becomes the vocabulary of the gospel." },
+      { t: "note", x: "Here the ark's message is most concentrated: the broken covenant lies beneath, the blood is sprinkled above, and mercy speaks from between. Law below, blood above, voice between." },
+    ],
+  },
+  {
+    id: "censer-and-veil-rent",
+    no: "VII",
+    title: "The Golden Censer and the Veil Rent",
+    subtitle: "The way in, and what became of the thing that barred it",
+    refs: ["Leviticus 16:12-13", "Hebrews 9:3-8", "Matthew 27:51", "Hebrews 10:19-20", "Ephesians 2:14"],
+    body: [
+      { t: "p", x: "Everything about the room where the ark stood was designed to keep a man out. A curtain, a cloud of incense, a single day in the year, a single priest, and blood — the whole apparatus of mercy was also an apparatus of exclusion. Hebrews lists the furniture of that room and then stops itself: <em>of which we cannot now speak particularly</em> (Hebrews 9:5)." },
+      { t: "p", x: "The incense belonged to the entry. Aaron was to take a censer full of burning coals of fire from off the altar, and his hands full of sweet incense beaten small, <em>and he shall bring it within the vail</em> — and put the incense upon the fire <em>that the cloud of the incense may cover the mercy seat that is upon the testimony, that he die not</em> (Leviticus 16:12-13). The smoke was a screen drawn over the throne: the one condition on which a mortal might stand in that room and live." },
+      { t: "h", x: "The barrier named at the cross" },
+      { t: "q", x: "And, behold, the veil of the temple was rent in twain from the top to the bottom.", ref: "Matthew 27:51" },
+      { t: "p", x: "At the ninth hour, when the last cry was uttered, the temple's curtain tore — <em>from the top to the bottom</em> — and in the same hour the rocks were rent and the graves were opened. It was not torn upward by hands. Mark and Luke record the same fact, and Luke adds that the sun was darkened (Mark 15:38; Luke 23:45)." },
+      { t: "h", x: "The argument Hebrews builds on it" },
+      { t: "p", x: "Hebrews had already reasoned from the veil's standing: <em>the Holy Ghost this signifying, that the way into the holiest of all was not yet made manifest, while as the first tabernacle was yet standing</em> (Hebrews 9:8). A curtain in place was itself a sermon: <em>not yet</em>. Then the letter turns, and uses the tearing as an invitation." },
+      { t: "q", x: "Having therefore, brethren, boldness to enter into the holiest by the blood of Jesus, by a new and living way, which he hath consecrated for us, through the veil, that is to say, his flesh.", ref: "Hebrews 10:19-20" },
+      { t: "list", items: [
+        "The veil is interpreted: it is His flesh — the barrier and the doorway in one.",
+        "The blood is still required for entry, but it is His own.",
+        "What was once one day and one man becomes a standing invitation to <em>draw near</em>.",
+        "Ephesians reads the same fact as a demolition: <em>the middle wall of partition</em> is broken down (Ephesians 2:14).",
+      ] },
+      { t: "p", x: "It is a striking thing that the gospel writers never describe the ark behind that curtain, and never need to. The object that had stood at the centre of Israel's architecture for centuries is displaced in the New Testament by the torn curtain that used to hide it. The throne had been making room for the King." },
+      { t: "note", x: "Read the ark's whole arrangement as a single sentence: <em>not yet</em>. The rent veil, written across the same architecture, answers it: <em>now</em>. The mercy seat has not been removed. It has been occupied." },
+    ],
+  },
+  {
+    id: "rise-up-lord",
+    no: "VIII",
+    title: "Rise Up, LORD: The Ark on the March",
+    subtitle: "The wilderness camp, and the words said whenever the ark moved",
+    refs: ["Numbers 2:17", "Numbers 4:5-6", "Numbers 10:33-36", "Numbers 14:44", "Psalm 68:1, 7", "2 Chronicles 6:41"],
+    body: [
+      { t: "p", x: "For forty years the ark was not at rest. It travelled on the shoulders of the sons of Kohath, wrapped first in the covering veil, then in a covering of badgers' skins, then in a cloth wholly of blue, with the staves in place (Numbers 4:5-6). And the camp moved around it: <em>then the tabernacle of the congregation shall set forward with the camp of the Levites in the midst of the camp</em> (Numbers 2:17)." },
+      { t: "p", x: "The arrangement of the tribes was itself a theology. Judah pitched eastward by his standard, Reuben southward, Ephraim westward, Dan northward, and the Levites encircled the sanctuary at the centre (Numbers 2). The nation lived as a diagram: the Presence of God in the middle of everything, and every family of Israel facing inward toward it." },
+      { t: "h", x: "The words of the march" },
+      { t: "q", x: "And it came to pass, when the ark set forward, that Moses said, Rise up, LORD, and let thine enemies be scattered; and let them that hate thee flee before thee. And when it rested, he said, Return, O LORD, unto the many thousands of Israel.", ref: "Numbers 10:35-36" },
+      { t: "p", x: "Here is the ark's liturgy: a shout at departure, and a plea at rest. The Presence is asked to go out before the army, and to come back to the multitude. This fragment — two verses, like a pair of bells — stands at the head of one of the great psalms:" },
+      { t: "q", x: "Let God arise, let his enemies be scattered: let them also that hate him flee before him... O God, when thou wentest forth before thy people, when thou didst march through the wilderness.", ref: "Psalm 68:1, 7" },
+      { t: "p", x: "And the same words are on Solomon's lips at the dedication of the temple: <em>Now therefore arise, O LORD God, into thy resting place, thou, and the ark of thy strength</em> (2 Chronicles 6:41; Psalm 132:8). Moses' cry of the march becomes the king's prayer of the resting place." },
+      { t: "h", x: "The ark that would not go" },
+      { t: "p", x: "There is a sober counterpart in the same book. When the people, chastened by the report of the spies, presumed to go up into the hill country against the word of Moses — <em>go not up, for the LORD is not among you</em> — they went up anyway. The record is one line of quiet devastation: <em>nevertheless the ark of the covenant of the LORD, and Moses, departed not out of the camp</em> (Numbers 14:44)." },
+      { t: "note", x: "The Presence is never commanded by the confidence of those who carry it. The ark went where God went; when He did not go, the ark stayed, and the hill country became a defeat. In Scripture, holiness is not a place to be visited but a Presence to be followed." },
+    ],
+  },
+  {
+    id: "jordan-and-jericho",
+    no: "IX",
+    title: "Jordan Divided, Jericho Fallen",
+    subtitle: "The ark goes before the people",
+    refs: ["Numbers 10:33", "Joshua 3:1-17", "Joshua 4:7-11", "Joshua 6:1-20"],
+    body: [
+      { t: "p", x: "In the wilderness the ark led. When Israel set forward, <em>the ark of the covenant of the LORD went before them in the three days' journey, to search out a resting place for them</em> (Numbers 10:33)." },
+      { t: "q", x: "And the priests that bare the ark of the covenant of the LORD stood firm on dry ground in the midst of Jordan, and all the Israelites passed over on dry ground, until all the people were passed clean over Jordan.", ref: "Joshua 3:17" },
+      { t: "p", x: "The priests bearing the ark went first into the flooded river, and the waters that came down from above stood and rose up upon an heap. The ark remained in the midst of Jordan while the nation crossed. Twelve stones were taken out of the riverbed and set up in Gilgal as a memorial, that the nations of the earth might know the hand of the LORD (Joshua 4:7, 24)." },
+      { t: "p", x: "At Jericho the ark circled the city once a day for six days. On the seventh day the priests blew the trumpets, the people shouted with a great shout, <em>and the wall fell down flat</em> (Joshua 6:20)." },
+      { t: "note", x: "Crossing and conquest are alike attributed not to Israel's strength, but to the Presence that went before them in a wooden chest — carried on the shoulders of priests, at walking pace." },
+    ],
+  },
+  {
+    id: "captivity-and-return",
+    no: "X",
+    title: "Captivity, Dagon, and the Return",
+    subtitle: "Ichabod — the ark in Philistine hands, and the long road back",
+    refs: ["1 Samuel 4:1-11, 22", "1 Samuel 5:1-6", "1 Samuel 6:1-21", "Psalm 78:60-61"],
+    body: [
+      { t: "p", x: "At Aphek the armies of Israel were routed and the ark taken. Hophni and Phinehas, the sons of Eli, were slain; Eli fell backward from his seat and died; and the wife of Phinehas named her son Ichabod — <em>the glory is departed from Israel: for the ark of God is taken</em> (1 Samuel 4:11, 22)." },
+      { t: "q", x: "And delivered his strength into captivity, and his glory into the enemy's hand.", ref: "Psalm 78:61" },
+      { t: "h", x: "In the house of Dagon" },
+      { t: "p", x: "The Philistines set the ark beside their god in Ashdod. On the first morning Dagon was fallen face down before the ark; on the second, the head and both palms of his hands were cut off upon the threshold. And the hand of the LORD was heavy upon Ashdod, and upon Gath, and upon Ekron, with tumours and with the mice that marred the land (1 Samuel 5:1-6; 6:4-5)." },
+      { t: "h", x: "The return" },
+      { t: "p", x: "The priests and diviners of Philistia counselled a trespass offering of five golden emerods and five golden mice, and sent the ark back upon a new cart drawn by two milch kine that had never borne the yoke. The kine took the straight way to Beth-shemesh, lowing as they went." },
+      { t: "p", x: "Many of Beth-shemesh died because they looked into the ark (1 Samuel 6:19). The men of the city asked, <em>who is able to stand before this holy LORD God?</em> — and the ark came to the house of Abinadab in Kiriath-jearim, where it remained some twenty years (1 Samuel 6:20-21; 7:1-2)." },
+      { t: "note", x: "The narrative refuses sentimentality. The ark is no charm: it is a throne, and it gives no one licence — not the Philistines, not the men of Beth-shemesh, not Israel's own elders who had brought it out as a good-luck token." },
+    ],
+  },
+  {
+    id: "uzzah-and-obededom",
+    no: "XI",
+    title: "Uzzah, Obed-edom, and David's Dance",
+    subtitle: "How the ark was brought at last to Jerusalem",
+    refs: ["2 Samuel 6:1-19", "1 Chronicles 13", "1 Chronicles 15:1-15", "Psalm 24"],
+    body: [
+      { t: "p", x: "David gathered thirty thousand chosen men and went up to bring the ark from Baalah of Judah. They carried it on a new cart. At the threshing floor of Nachon the oxen stumbled, and Uzzah put forth his hand to hold the ark, and he died there beside it (2 Samuel 6:6-7)." },
+      { t: "p", x: "The procession stopped. David was displeased and afraid, and the ark turned aside into the house of Obed-edom the Gittite, where it remained three months — and the LORD blessed Obed-edom and all his household (2 Samuel 6:11)." },
+      { t: "p", x: "On the second attempt the lesson had been learned. <em>And the children of the Levites bare the ark of God upon their shoulders with the staves thereon, as Moses commanded according to the word of the LORD</em> (1 Chronicles 15:15). The Kohathites alone were appointed to bear it, and were forbidden to touch the holy things lest they die (Numbers 4:15)." },
+      { t: "q", x: "And David danced before the LORD with all his might; and David was girded with a linen ephod.", ref: "2 Samuel 6:14" },
+      { t: "p", x: "So the ark came up into the city of David with shouting and the sound of the trumpet. Michal, watching from a window, despised him in her heart; David answered that it was before the LORD, and that he would be yet more vile in his own sight (2 Samuel 6:20-22)." },
+      { t: "note", x: "Two truths stand side by side and may not be separated: the ark may not be handled as a common object, and the joy of its approach may be unashamed. Reverence and gladness are not rivals in Scripture." },
+    ],
+  },
+  {
+    id: "songs-of-the-ark",
+    no: "XII",
+    title: "Singers, Trumpets, and the Songs of the Ark",
+    subtitle: "How a carried chest shaped the poetry and the music of Israel",
+    refs: ["Psalm 24:7-10", "Psalm 47:5", "Psalm 68:24-25", "Psalm 132:6-9", "1 Chronicles 16:4-6, 37", "Lamentations 2:1"],
+    body: [
+      { t: "p", x: "An object that is carried through a river, hailed at gates, feared in battle and mourned in exile leaves marks on a people's poetry. Much of the Psalter's throne-language grew out of the ark's processions, and several of the Psalms read like their libretto." },
+      { t: "h", x: "The psalms of the ascent" },
+      { t: "list", items: [
+        "Psalm 24:7-10 — <em>Lift up your heads, O ye gates; and be ye lift up, ye everlasting doors; and the King of glory shall come in.</em> Long read as the hymn of the ark's entry into the city.",
+        "Psalm 47:5 — <em>God is gone up with a shout, the LORD with the sound of a trumpet.</em>",
+        "Psalm 132:6-9 — <em>Lo, we heard of it at Ephratah: we found it in the fields of the wood. We will go into his tabernacles: we will worship at his footstool. Arise, O LORD, into thy rest; thou, and the ark of thy strength.</em>",
+      ] },
+      { t: "p", x: "Psalm 132 is the psalm of the finding — David's search, the ark discovered in the fields of the wood, and the procession into the tent he had pitched for it, ending in the priestly blessing: <em>Let thy priests be clothed with righteousness; and let thy saints shout for joy</em> (Psalm 132:9)." },
+      { t: "h", x: "The singers before, the players after" },
+      { t: "q", x: "They have seen thy goings, O God; even the goings of my God, my King, in the sanctuary. The singers went before, the players on instruments followed after; among them were the damsels playing with timbrels.", ref: "Psalm 68:24-25" },
+      { t: "p", x: "Chronicles records the institution. When the ark was set in the midst of the tent that David had pitched for it, he appointed Levites <em>to minister before the ark continually</em>, and <em>to record, and to thank and praise the LORD God of Israel</em> — Asaph first, and his brethren after him (1 Chronicles 16:4-6, 37). The temple's music began as the ark's retinue." },
+      { t: "h", x: "And the dirge after the loss" },
+      { t: "q", x: "How hath the Lord covered the daughter of Zion with a cloud in his anger... and hath not remembered his footstool in the day of his anger.", ref: "Lamentations 2:1" },
+      { t: "p", x: "The word is the ark's own title — <em>his footstool</em>. The poetry that had sung the ark's coming now carries its absence. And when the Psalms speak of the restoration of Zion, they reach again for the same furniture: <em>Arise, O LORD, into thy rest; thou, and the ark of thy strength</em>." },
+      { t: "note", x: "Notice that the psalms of the ark are not, in the end, about the ark. They are about the One who goes up with a shout, who is clothed with majesty, who arises into His rest. The furniture supplied the vocabulary; the LORD supplied the subject." },
+    ],
+  },
+  {
+    id: "temple-and-the-cloud",
+    no: "XIII",
+    title: "The Temple, the Cloud, and Jeremiah's Word",
+    subtitle: "From the tabernacle curtains to a promise beyond the chest",
+    refs: ["2 Samuel 7:2", "1 Kings 8:1-11", "2 Chronicles 5:2-14", "2 Chronicles 35:3", "Jeremiah 3:16"],
+    body: [
+      { t: "p", x: "David said to Nathan the prophet: <em>See now, I dwell in an house of cedar, but the ark of God dwelleth within curtains</em> (2 Samuel 7:2). The desire to honour the ark with a house was good; the building of it fell to Solomon." },
+      { t: "q", x: "And the priests brought in the ark of the covenant of the LORD unto his place, into the oracle of the house, to the most holy place, even under the wings of the cherubims.", ref: "1 Kings 8:6" },
+      { t: "p", x: "Then came the sign that had attended the tabernacle: <em>the cloud filled the house of the LORD, so that the priests could not stand to minister because of the cloud: for the glory of the LORD had filled the house of God</em> (1 Kings 8:10-11; 2 Chronicles 5:13-14, where the trumpeters and singers were as one, praising, <em>For he is good; for his mercy endureth for ever</em>)." },
+      { t: "h", x: "The last historical mention" },
+      { t: "p", x: "The ark's final appearance in the historical books is in the reign of Josiah, when the Levites who taught all Israel were told: <em>Put the holy ark in the house which Solomon the son of David king of Israel did build; it shall not be a burden upon your shoulders</em> (2 Chronicles 35:3)." },
+      { t: "h", x: "Beyond the symbol" },
+      { t: "p", x: "Jeremiah then speaks of a day when the symbol would be outgrown: <em>they shall say no more, The ark of the covenant of the LORD: neither shall it come to mind: neither shall they remember it; neither shall they visit it; neither shall that be done any more</em> — for at that time Jerusalem itself shall be called the throne of the LORD (Jeremiah 3:16-17)." },
+      { t: "note", x: "The ark's trajectory within the canon moves from a unique and dangerous object toward a promise of a Presence no longer housed in a chest. What was concentrated behind a veil is promised to a whole city, and at last to a whole people." },
+    ],
+  },
+  {
+    id: "the-throne-that-was-not-there",
+    no: "XIV",
+    title: "The Second Temple, and the Throne That Was Not There",
+    subtitle: "The return from Babylon, the inventory of vessels, and a greater glory",
+    refs: ["Ezra 1:7-11", "Ezra 3:12-13", "Haggai 2:3, 9", "Zechariah 4:9-10", "Malachi 3:1", "Luke 2:27-32"],
+    body: [
+      { t: "p", x: "The return from Babylon is documented with unusual care in the matter of objects. Cyrus brings forth the vessels of the house of the LORD which Nebuchadnezzar had carried away from Jerusalem, and Ezra lists them by kind and by number — chargers of gold, chargers of silver, basons, cups and the rest, five thousand and four hundred in all (Ezra 1:7-11; cp. Ezra 6:5)." },
+      { t: "p", x: "The ark is not in the list. Nor is it mentioned anywhere in Ezra, Nehemiah, Haggai, Zechariah or Malachi — the whole literature of the return and the rebuilding. The second house was furnished with the vessels of the first, and with the throne missing. (What became of the ark, and what the various traditions say of it, is set out and graded in Article XVI.)" },
+      { t: "h", x: "The day of small things" },
+      { t: "p", x: "The men who had seen the first house wept when the foundation of the second was laid. They <em>wept with a loud voice</em>, and the people <em>could not discern the noise of the shout of joy from the noise of the weeping of the people</em> (Ezra 3:12-13). Haggai is sent to a people comparing the two buildings, and the comparison is unfavourable:" },
+      { t: "q", x: "Who is left among you that saw this house in her first glory? and how do ye see it now? is it not in your eyes in comparison of it as nothing?", ref: "Haggai 2:3" },
+      { t: "p", x: "The answer given is not that the ark will be brought back. The answer is a Person-shaped promise. <em>The glory of this latter house shall be greater than of the former, saith the LORD of hosts: and in this place will I give peace</em> (Haggai 2:9). Zechariah gives the same comfort in the same terms: <em>The hands of Zerubbabel have laid the foundation of this house; his hands shall also finish it</em> — and <em>who hath despised the day of small things?</em> (Zechariah 4:9-10)." },
+      { t: "h", x: "A tradition of fire and water" },
+      { t: "p", x: "A deuterocanonical account — the same tier as the cave tradition noted elsewhere in this archive, and not part of the Hebrew canon — relates that Jeremiah's companions, at his instruction, carried the sacred fire and the tabernacle and the ark into a cave and sealed the place, and that some of the same priests, coming afterwards to mark the spot, found in its place a thick water (2 Maccabees 1:19-22; cp. 2:4-8). The tradition's own claim is that the ark was hidden before the exile, and that the inner room of the second house stood bare of it. That is a claim of a particular tier, and this archive keeps it at that tier." },
+      { t: "h", x: "What the emptiness teaches" },
+      { t: "p", x: "If the most holy place of the second temple held no ark, then Haggai's promise was never going to be fulfilled by furniture. And it was into that house, with its unfurnished oracle, that the Lord came — <em>the Lord, whom ye seek, shall suddenly come to his temple</em> (Malachi 3:1) — and the consolation of Israel was carried in arms through its courts (Luke 2:27-32). Jeremiah had already said the thing plainly:" },
+      { t: "q", x: "They shall say no more, The ark of the covenant of the LORD: neither shall it come to mind: neither shall they remember it; neither shall they visit it; neither shall that be done any more. At that time they shall call Jerusalem the throne of the LORD.", ref: "Jeremiah 3:16-17" },
+      { t: "note", x: "The ark's absence from the second temple is not a hole in the story; it is a seam. The age of the object closes, and the age of the Person opens. What the first house had in gold, the second would have in flesh — and the greater glory of the latter house is not a better box, but a coming Lord." },
+    ],
+  },
+  {
+    id: "hilasterion",
+    no: "XV",
+    title: "Hilasterion: The Mercy Seat in the New Testament",
+    subtitle: "The one Greek word that joins the ark's golden lid to the cross",
+    refs: ["Romans 3:25", "Hebrews 9:5, 12", "1 John 2:2", "1 John 4:10", "Hebrews 2:17", "Luke 18:13"],
+    body: [
+      { t: "p", x: "When the Hebrew Scriptures were translated into Greek, the ark's golden lid — the <em>kapporeth</em> — was rendered with a single word: <em>hilasterion</em>, the place of propitiation, the thing that covers. The word occurs twice in the New Testament, and words built from the same root occur several times more. The New Testament never lost the furniture." },
+      { t: "h", x: "Romans 3:25 — the word out in the open" },
+      { t: "q", x: "Whom God hath set forth to be a propitiation through faith in his blood, to declare his righteousness for the remission of sins that are past, through the forbearance of God.", ref: "Romans 3:25" },
+      { t: "p", x: "The word rendered <em>propitiation</em> is <em>hilasterion</em> — the mercy seat. Paul is not speaking loosely. He is saying that God has set Christ forth as the lid of the ark: the place where the testimony beneath is covered, where the blood is sprinkled, and from which God is pleased to speak." },
+      { t: "h", x: "Law below, blood above, voice between" },
+      { t: "p", x: "Set the Levitical detail beside the Pauline sentence. The blood was sprinkled <em>upon the mercy seat eastward</em>, and before the mercy seat seven times (Leviticus 16:14-15). The priest who entered saw three things in one view: the cherubim, the golden lid, and the blood upon it. Paul places Christ in that same position — the meeting place, and the blood upon it, and the declaration of righteousness that follows." },
+      { t: "p", x: "Hebrews had prepared the ground by naming the same object and the same word — <em>and over it the cherubims of glory shadowing the mercyseat</em> (Hebrews 9:5) — and then showing the high priest entering with blood that was not his own: <em>neither by the blood of goats and calves, but by his own blood he entered in once into the holy place</em> (Hebrews 9:12)." },
+      { t: "h", x: "The same root elsewhere" },
+      { t: "list", items: [
+        "1 John 2:2 — <em>And he is the propitiation for our sins: and not for ours only, but also for the sins of the whole world.</em>",
+        "1 John 4:10 — <em>Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins.</em>",
+        "Hebrews 2:17 — a merciful and faithful high priest, <em>to make reconciliation for the sins of the people.</em>",
+        "Luke 18:13 — the publican smiting his breast in the temple: <em>God be merciful to me a sinner.</em>",
+      ] },
+      { t: "p", x: "Four writers, four settings — an epistle of doctrine, an epistle of love, a sermon, and a parable about prayer — and beneath all of them the same word the translators had chosen for the lid of the ark." },
+      { t: "note", x: "Pause over the fact that the mercy seat is a <em>lid</em>. Its work is to lie on top of the law and under the mercy. It does not abolish the testimony; it covers it, and speaks from above it. So the gospel: the law is not set aside, it is satisfied — and the voice comes from above the satisfaction." },
+    ],
+  },
+  {
+    id: "traditions-and-claims",
+    no: "XVI",
+    title: "Traditions, Claims, and the Long Silence",
+    subtitle: "What is written, what is handed down, and what is merely claimed",
+    refs: ["2 Maccabees 2:4-8", "Hebrews 9:24", "Revelation 11:19"],
+    body: [
+      { t: "p", x: "After Josiah the scriptural narrative is silent. No canonical text narrates the end of the ark — not the Babylonian destruction of the temple in 586 BC, not the return under Zerubbabel and Ezra, not even the accounts of the plundering of the temple in the Maccabean books. The silence is itself one of the most striking features of the archive." },
+      { t: "h", x: "What follows is a register, and the register is honest about its tiers" },
+      { t: "tiers", items: [
+        { tier: "Deuterocanonical", badge: "written, but not in the Hebrew canon",
+          title: "Jeremiah hides the ark in a cave",
+          x: "The second book of Maccabees (2nd century BC) records that the prophet, warned of God, carried the tabernacle and the ark into a cave on the mountain where Moses had seen the heritage of God, and sealed the entrance. The place, it says, shall remain unknown until the time when God gathers His people together again and receives them unto mercy (2 Maccabees 2:4-8)." },
+        { tier: "Ancient tradition", badge: "held by a living church, never examined",
+          title: "The ark at Aksum",
+          x: "The Ethiopian Orthodox tradition — recorded in the Kebra Nagast, whose present form is medieval but which carries older material — holds that the ark was brought to Ethiopia by Menelik, son of Solomon and the Queen of Sheba, and that it now rests at the Church of Our Lady Mary of Zion in Aksum. A single appointed guardian monk is said to be the only person who may see it. A replica, the tabot, is carried in procession. This is not folklore invented yesterday: it is the living claim of an ancient church. It has also never been opened to independent examination, and no scriptural text supports it." },
+        { tier: "Historical argument", badge: "reasoned from the record",
+          title: "Where the silence points",
+          x: "Several scholarly reconstructions have been offered for the ark's disappearance: that it was hidden before the Babylonians took the city; that it was carried away to Babylon along with the rest of the temple treasure (2 Kings 24-25); that it was destroyed; or that a replacement, or none at all, stood in the second temple. The second temple's most holy place is described in the sources as standing open and unfurnished, which is consistent with any of these." },
+        { tier: "Modern claim", badge: "asserted without evidence",
+          title: "The reported discovery near Jerusalem",
+          x: "In the 1980s an amateur researcher claimed to have located the ark in a chamber beneath a site at what is called Jeremiah's Grotto, just outside the walls of Jerusalem, and to have photographed it. No artefact, photograph, or analysis has ever been submitted for peer review; the claim rests on subsequent retellings and on video tours of the site. It should be classed as a claim, not a finding. Similar cautions apply to the recurring claims attaching the ark to Templar legends, to Egypt, and to various unexcavated hilltops." },
+        { tier: "Inquiry from other fields", badge: "genuine research, different question",
+          title: "The Lemba and the Qumran Copper Scroll",
+          x: "The Lemba of southern Africa preserve an oral tradition of priestly descent; genetic studies in the 1990s and 2000s found a striking frequency of the so-called Cohen modal haplotype among their priestly Buba clan. It is genuine and interesting work, but DNA can say nothing about the location of a box of acacia wood. Likewise the Copper Scroll from Qumran Cave 3 (3Q15) lists hoards of gold and silver said to be hidden in the Judaean desert, and has drawn treasure-hunters ever since; most scholars read it as a genuine inventory or a literary artifice of some other sort, not a map to the ark." },
+      ] },
+      { t: "h", x: "The last scriptural sighting" },
+      { t: "q", x: "And the temple of God was opened in heaven, and there was seen in his temple the ark of his testament.", ref: "Revelation 11:19" },
+      { t: "p", x: "After the earthly silence, the ark appears once more — and it appears in heaven, in the opened temple, announced by lightnings and voices and thunderings. Hebrews had already said as much: the sanctuary that matters is the true one, which the Lord pitched, and into which Christ has entered for us (Hebrews 8:2; 9:24)." },
+      { t: "note", x: "The discipline the ark itself teaches is the discipline this archive tries to keep: reverence for what is written, honesty about the tier of every claim, and a refusal to press silence into certainty." },
+    ],
+  },
+];
+
+const SCRIPTURES = [
+  { ref: "Exodus 25:8-9", section: "The Pattern", tags: "pattern tabernacle sanctuary",
+    text: "8 And let them make me a sanctuary; that I may dwell among them. 9 According to all that I shew thee, after the pattern of the tabernacle, and the pattern of all the instruments thereof, even so shall ye make it." },
+  { ref: "Exodus 25:10-11", section: "The Pattern", tags: "acacia shittim gold dimensions wood",
+    text: "10 And they shall make an ark of shittim wood: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof, and a cubit and a half the height thereof. 11 And thou shalt overlay it with pure gold, within and without shalt thou overlay it, and shalt make upon it a crown of gold round about." },
+  { ref: "Exodus 25:12-15", section: "The Pattern", tags: "rings staves carry bear",
+    text: "12 And thou shalt cast four rings of gold for it, and put them in the four corners thereof; and two rings shall be in the one side of it, and two rings in the other side of it. 13 And thou shalt make staves of shittim wood, and overlay them with gold. 14 And thou shalt put the staves into the rings by the sides of the ark, that the ark may be borne with them. 15 The staves shall be in the rings of the ark: they shall not be taken from it." },
+  { ref: "Exodus 25:17-20", section: "The Pattern", tags: "mercy seat cherubim gold lid wings",
+    text: "17 And thou shalt make a mercy seat of pure gold: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof. 18 And thou shalt make two cherubims of gold, of beaten work shalt thou make them, in the two ends of the mercy seat. 19 And make one cherub on the one end, and the other cherub on the other end: even of the mercy seat shall ye make the cherubims on the two ends thereof. 20 And the cherubims shall stretch forth their wings on high, covering the mercy seat with their wings, and their faces shall look one to another; toward the mercy seat shall the faces of the cherubims be." },
+  { ref: "Exodus 25:21-22", section: "The Pattern", tags: "testimony meet commune voice",
+    text: "21 And thou shalt put the mercy seat above upon the ark; and in the ark thou shalt put the testimony that I shall give thee. 22 And there I will meet with thee, and I will commune with thee from above the mercy seat, from between the two cherubims which are upon the ark of the testimony, of all things which I will give thee in commandment unto the children of Israel." },
+  { ref: "Exodus 31:1-3", section: "The Pattern", tags: "bezaleel spirit wisdom craftsman",
+    text: "1 And the LORD spake unto Moses, saying, 2 See, I have called by name Bezaleel the son of Uri, the son of Hur, of the tribe of Judah: 3 And I have filled him with the spirit of God, in wisdom, and in understanding, and in knowledge, and in all manner of workmanship." },
+  { ref: "Exodus 37:1-2", section: "The Making", tags: "bezaleel shittim gold crown",
+    text: "1 And Bezaleel made the ark of shittim wood: two cubits and a half was the length of it, and a cubit and a half the breadth of it, and a cubit and a half the height of it: 2 And he overlaid it with pure gold within and without, and made a crown of gold to it round about." },
+  { ref: "Exodus 40:20-21", section: "The Making", tags: "tabernacle veil set up testimony",
+    text: "20 And he took and put the testimony into the ark, and set the staves on the ark, and put the mercy seat above upon the ark: 21 And he brought the ark into the tabernacle, and set up the vail of the covering, and covered the ark of the testimony; as the LORD commanded Moses." },
+  { ref: "Leviticus 16:2", section: "Atonement", tags: "veil holy place cloud die mercy seat",
+    text: "And the LORD said unto Moses, Speak unto Aaron thy brother, that he come not at all times into the holy place within the vail before the mercy seat, which is upon the ark; that he die not: for I will appear in the cloud upon the mercy seat." },
+  { ref: "Leviticus 16:14-15", section: "Atonement", tags: "blood sprinkle seven times atonement",
+    text: "14 And he shall take of the blood of the bullock, and sprinkle it with his finger upon the mercy seat eastward; and before the mercy seat shall he sprinkle of the blood with his finger seven times." },
+  { ref: "Leviticus 16:12-13", section: "Atonement", tags: "censer incense cloud cover mercy seat die",
+    text: "12 And he shall take a censer full of burning coals of fire from off the altar before the LORD, and his hands full of sweet incense beaten small, and bring it within the vail: 13 And he shall put the incense upon the fire before the LORD, that the cloud of the incense may cover the mercy seat that is upon the testimony, that he die not." },
+  { ref: "Numbers 4:5-6", section: "Atonement", tags: "covering veil badgers skins kohath",
+    text: "5 And when the camp setteth forward, Aaron shall come, and his sons, and they shall take down the covering vail, and cover the ark of testimony with it: 6 And shall put thereon the covering of badgers' skins, and shall spread over it a cloth wholly of blue, and shall put in the staves thereof." },
+  { ref: "Numbers 4:15", section: "Atonement", tags: "kohath touch die bear holy things",
+    text: "And when Aaron and his sons have made an end of covering the sanctuary, and all the vessels of the sanctuary, as the camp is to set forward; after that, the sons of Kohath shall come to bear it: but they shall not touch any holy thing, lest they die. These things are the burden of the sons of Kohath in the tabernacle of the congregation." },
+  { ref: "Exodus 20:24", section: "The Presence", tags: "name record bless place altar",
+    text: "An altar of earth thou shalt make unto me, and shalt sacrifice thereon thy burnt offerings, and thy peace offerings, thy sheep, and thine oxen: in all places where I record my name I will come unto thee, and I will bless thee." },
+  { ref: "Deuteronomy 12:5, 11", section: "The Presence", tags: "name dwell place choose habitation",
+    text: "5 But unto the place which the LORD your God shall choose out of all your tribes to put his name there, even unto his habitation shall ye seek, and thither thou shalt come: 11 Then there shall be a place which the LORD your God shall choose to cause his name to dwell there; thither shall ye bring all that I command you; your burnt offerings, and your sacrifices, your tithes, and the heave offering of your hand, and all your choice vows which ye vow unto the LORD." },
+  { ref: "Numbers 2:17", section: "The Presence", tags: "camp midst levites order standards tabernacle",
+    text: "Then the tabernacle of the congregation shall set forward with the camp of the Levites in the midst of the camp: as they encamp, so shall they set forward, every man in his place by their standards." },
+  { ref: "1 Chronicles 13:6", section: "The Presence", tags: "name called cherubims kirjathjearim bring up",
+    text: "And David went up, and all Israel, to Baalah, that is, to Kirjath-jearim, which belonged to Judah, to bring up thence the ark of God the LORD, that dwelleth between the cherubims, whose name is called on it." },
+  { ref: "Numbers 7:89", section: "The Presence", tags: "voice mercy seat cherubim speak",
+    text: "And when Moses was gone into the tabernacle of the congregation to speak with him, then he heard the voice of one speaking unto him from off the mercy seat that was upon the ark of testimony, from between the two cherubims: and he spake unto him." },
+  { ref: "Numbers 10:33", section: "The Presence", tags: "journey go before resting place",
+    text: "And they departed from the mount of the LORD three days' journey: and the ark of the covenant of the LORD went before them in the three days' journey, to search out a resting place for them." },
+  { ref: "Numbers 10:35-36", section: "The Presence", tags: "rise up enemies scattered return thousands march",
+    text: "35 And it came to pass, when the ark set forward, that Moses said, Rise up, LORD, and let thine enemies be scattered; and let them that hate thee flee before thee. 36 And when it rested, he said, Return, O LORD, unto the many thousands of Israel." },
+  { ref: "Numbers 14:44", section: "The Presence", tags: "presumed hill departed not camp rebellion",
+    text: "But they presumed to go up unto the hill top: nevertheless the ark of the covenant of the LORD, and Moses, departed not out of the camp." },
+  { ref: "Numbers 17:10", section: "The Testimonies", tags: "aaron rod budded token rebels",
+    text: "And the LORD said unto Moses, Bring Aaron's rod again before the testimony, to be kept for a token against the rebels; and thou shalt quite take away their murmurings from me, that they die not." },
+  { ref: "Deuteronomy 10:4-5", section: "The Testimonies", tags: "tables stone ten commandments written",
+    text: "4 And he wrote on the tables, according to the first writing, the ten commandments, which the LORD spake unto you in the mount out of the midst of the fire in the day of the assembly: and the LORD gave them unto me. 5 And I turned myself and came down from the mount, and put the tables in the ark which I had made; and there they be, as the LORD commanded me." },
+  { ref: "Deuteronomy 31:25-26", section: "The Testimonies", tags: "book of the law side witness levites",
+    text: "25 That Moses commanded the Levites, which bare the ark of the covenant of the LORD, saying, 26 Take this book of the law, and put it in the side of the ark of the covenant of the LORD your God, that it may be there for a witness against thee." },
+  { ref: "Exodus 16:32-34", section: "The Testimonies", tags: "manna omer pot generations",
+    text: "32 And Moses said, This is the thing which the LORD commandeth, Fill an omer of it to be kept for your generations; that they may see the bread wherewith I have fed you in the wilderness, when I brought you forth from the land of Egypt. 33 And Moses said unto Aaron, Take a pot, and put an omer full of manna therein, and lay it up before the LORD, to be kept for your generations. 34 As the LORD commanded Moses, so Aaron laid it up before the Testimony, to be kept." },
+  { ref: "Joshua 3:14-17", section: "Crossing & Conquest", tags: "jordan priests dry ground waters heap",
+    text: "14 And it came to pass, when the people removed from their tents, to pass over Jordan, and the priests bearing the ark of the covenant before the people; 15 And as they that bare the ark were come unto Jordan, and the feet of the priests that bare the ark were dipped in the brim of the water, (for Jordan overfloweth all his banks all the time of harvest,) 16 That the waters which came down from above stood and rose up upon an heap very far from the city Adam, that is beside Zaretan: and those that came down toward the sea of the plain, even the salt sea, failed, and were cut off: and the people passed over right against Jericho. 17 And the priests that bare the ark of the covenant of the LORD stood firm on dry ground in the midst of Jordan, and all the Israelites passed over on dry ground, until all the people were passed clean over Jordan." },
+  { ref: "Joshua 4:7", section: "Crossing & Conquest", tags: "stones memorial gilgal jordan",
+    text: "Then ye shall answer them, That the waters of Jordan were cut off before the ark of the covenant of the LORD; when it passed over Jordan, the waters of Jordan were cut off: and these stones shall be for a memorial unto the children of Israel for ever." },
+  { ref: "Joshua 6:19-20", section: "Crossing & Conquest", tags: "jericho wall fell trumpet shout",
+    text: "19 But all the silver, and gold, and vessels of brass and iron, are consecrated unto the LORD: they shall come into the treasury of the LORD. 20 So the people shouted when the priests blew with the trumpets: and it came to pass, when the people heard the sound of the trumpet, and the people shouted with a great shout, that the wall fell down flat, so that the people went up into the city, every man straight before him, and they took the city." },
+  { ref: "1 Samuel 4:4, 11, 22", section: "Captivity & Return", tags: "aphek taken philistines ichabod glory",
+    text: "4 So the people sent to Shiloh, that they might bring from thence the ark of the covenant of the LORD of hosts, which dwelleth between the cherubims: and the two sons of Eli, Hophni and Phinehas, were there with the ark of the covenant of God. 11 And the ark of God was taken; and the two sons of Eli, Hophni and Phinehas, were slain. 22 And she said, The glory is departed from Israel: for the ark of God is taken." },
+  { ref: "1 Samuel 5:1-4", section: "Captivity & Return", tags: "dagon ashdod fallen idol head hands",
+    text: "1 And the Philistines took the ark of God, and brought it from Eben-ezer unto Ashdod. 2 When the Philistines took the ark of God, they brought it into the house of Dagon, and set it by Dagon. 3 And when they of Ashdod arose early on the morrow, behold, Dagon was fallen upon his face to the earth before the ark of the LORD. And they took Dagon, and set him in his place again. 4 And when they arose early on the morrow morning, behold, Dagon was fallen upon his face to the ground before the ark of the LORD; and the head of Dagon and both the palms of his hands were cut off upon the threshold; only the stump of Dagon was left to him." },
+  { ref: "1 Samuel 6:7-9", section: "Captivity & Return", tags: "new cart kine milch bethshemesh",
+    text: "7 Now therefore make a new cart, and take two milch kine, on which there hath come no yoke, and tie the kine to the cart, and bring their calves home from them: 8 And take the ark of the LORD, and lay it upon the cart; and put the jewels of gold, which ye return him for a trespass offering, in a coffer by the side thereof; and send it away, that it may go. 9 And see, if it goeth up by the way of his own coast to Beth-shemesh, then he hath done us this great evil: but if not, then we shall know that it is not his hand that smote us: it was a chance that happened to us." },
+  { ref: "1 Samuel 6:19-21", section: "Captivity & Return", tags: "bethshemesh looked kirjathjearim abinadab",
+    text: "19 And he smote the men of Beth-shemesh, because they had looked into the ark of the LORD, even he smote of the people fifty thousand and threescore and ten men: and the people lamented, because the LORD had smitten many of the people with a great slaughter. 20 And the men of Beth-shemesh said, Who is able to stand before this holy LORD God? and to whom shall he go up from us? 21 And they sent messengers to the inhabitants of Kirjath-jearim, saying, The Philistines have brought back the ark of the LORD; come ye down, and fetch it up to you." },
+  { ref: "2 Samuel 6:2, 6-7", section: "Captivity & Return", tags: "uzzah nachon cart oxen died",
+    text: "2 And David arose, and went with all the people that were with him from Baale of Judah, to bring up from thence the ark of God, whose name is called by the name of the LORD of hosts that dwelleth between the cherubims. 6 And when they came to Nachon's threshingfloor, Uzzah put forth his hand to the ark of God, and took hold of it; for the oxen shook it. 7 And the anger of the LORD was kindled against Uzzah; and God smote him there for his error; and there he died by the ark of God." },
+  { ref: "2 Samuel 6:11-15", section: "Captivity & Return", tags: "obededom blessed david danced linen ephod",
+    text: "11 And the ark of the LORD continued in the house of Obed-edom the Gittite three months: and the LORD blessed Obed-edom, and all his household. 12 And it was told king David, saying, The LORD hath blessed the house of Obed-edom, and all that pertaineth unto him, because of the ark of God. So David went and brought up the ark of God from the house of Obed-edom into the city of David with gladness. 13 And it was so, that when they that bare the ark of the LORD had gone six paces, he sacrificed oxen and fatlings. 14 And David danced before the LORD with all his might; and David was girded with a linen ephod. 15 So David and all the house of Israel brought up the ark of the LORD with shouting, and with the sound of the trumpet." },
+  { ref: "1 Chronicles 15:14-15", section: "Temple & Throne", tags: "levites shoulders staves moses commanded",
+    text: "14 So the priests and the Levites sanctified themselves to bring up the ark of the LORD God of Israel. 15 And the children of the Levites bare the ark of God upon their shoulders with the staves thereon, as Moses commanded according to the word of the LORD." },
+  { ref: "1 Chronicles 28:2", section: "Temple & Throne", tags: "footstool house of rest david",
+    text: "Then David the king stood up upon his feet, and said, Hear me, my brethren, and my people: As for me, I had in mine heart to build an house of rest for the ark of the covenant of the LORD, and for the footstool of our God, and had made ready for the building." },
+  { ref: "1 Kings 8:6-11", section: "Temple & Throne", tags: "solomon oracle most holy cloud glory",
+    text: "6 And the priests brought in the ark of the covenant of the LORD unto his place, into the oracle of the house, to the most holy place, even under the wings of the cherubims. 7 For the cherubims spread forth their two wings over the place of the ark, and the cherubims covered the ark and the staves thereof above. 8 And they drew out the staves, that the ends of the staves were seen out in the holy place before the oracle, and they were not seen without: and there they are unto this day. 9 There was nothing in the ark save the two tables of stone, which Moses put there at Horeb, when the LORD made a covenant with the children of Israel, when they came out of the land of Egypt. 10 And it came to pass, when the priests were come out of the holy place, that the cloud filled the house of the LORD, 11 So that the priests could not stand to minister because of the cloud: for the glory of the LORD had filled the house of the LORD." },
+  { ref: "1 Kings 8:1-2", section: "Temple & Throne", tags: "solomon elders feast ethanim",
+    text: "1 Then Solomon assembled the elders of Israel, and all the heads of the tribes, the chief of the fathers of the children of Israel, unto king Solomon in Jerusalem, that they might bring up the ark of the covenant of the LORD out of the city of David, which is Zion. 2 And all the men of Israel assembled themselves unto king Solomon at the feast in the month Ethanim, which is the seventh month." },
+  { ref: "2 Chronicles 5:13-14", section: "Temple & Throne", tags: "trumpeters singers one sound cloud filled",
+    text: "13 It came even to pass, as the trumpeters and singers were as one, to make one sound to be heard in praising and thanking the LORD; and when they lifted up their voice with the trumpets and cymbals and instruments of musick, and praised the LORD, saying, For he is good; for his mercy endureth for ever: that then the house was filled with a cloud, even the house of the LORD; 14 So that the priests could not stand to minister by reason of the cloud: for the glory of the LORD had filled the house of God." },
+  { ref: "2 Chronicles 35:3", section: "Temple & Throne", tags: "josiah levites put holy ark house",
+    text: "And said unto the Levites that taught all Israel, which were holy unto the LORD, Put the holy ark in the house which Solomon the son of David king of Israel did build; it shall not be a burden upon your shoulders: serve now the LORD your God, and his people Israel." },
+  { ref: "1 Kings 8:29", section: "Temple & Throne", tags: "name there eyes open prayer house",
+    text: "That thine eyes may be open toward this house night and day, even toward the place of which thou hast said, My name shall be there: that thou mayest hearken unto the prayer which thy servant shall make toward this place." },
+  { ref: "2 Chronicles 6:41-42", section: "Temple & Throne", tags: "arise resting place ark strength priests salvation",
+    text: "41 Now therefore arise, O LORD God, into thy resting place, thou, and the ark of thy strength: let thy priests, O LORD God, be clothed with salvation, and let thy saints rejoice in goodness. 42 O LORD God, turn not away the face of thine anointed: remember the mercies of David thy servant." },
+  { ref: "Ezra 1:7-11", section: "Temple & Throne", tags: "cyrus vessels returned babylon inventory missing",
+    text: "7 Also Cyrus the king brought forth the vessels of the house of the LORD, which Nebuchadnezzar had brought forth out of Jerusalem, and had put them in the house of his gods; 8 Even those did Cyrus king of Persia bring forth by the hand of Mithredath the treasurer, and numbered them unto Sheshbazzar, the prince of Judah. 9 And this is the number of them: thirty chargers of gold, a thousand chargers of silver, nine and twenty knives, 10 Thirty basons of gold, silver basons of a second sort four hundred and ten, and other vessels a thousand. 11 All the vessels of gold and of silver were five thousand and four hundred. All these did Sheshbazzar bring up with them of the captivity that were brought up from Babylon unto Jerusalem." },
+  { ref: "Haggai 2:3, 9", section: "Temple & Throne", tags: "latter house glory greater former peace small things",
+    text: "3 Who is left among you that saw this house in her first glory? and how do ye see it now? is it not in your eyes in comparison of it as nothing? 9 The glory of this latter house shall be greater than of the former, saith the LORD of hosts: and in this place will I give peace, saith the LORD of hosts." },
+  { ref: "Psalm 24:7-10", section: "Poets & Prophets", tags: "lift up gates king of glory come in procession",
+    text: "7 Lift up your heads, O ye gates; and be ye lift up, ye everlasting doors; and the King of glory shall come in. 8 Who is this King of glory? The LORD strong and mighty, the LORD mighty in battle. 9 Lift up your heads, O ye gates; even lift them up, ye everlasting doors; and the King of glory shall come in. 10 Who is this King of glory? The LORD of hosts, he is the King of glory. Selah." },
+  { ref: "Psalm 47:5", section: "Poets & Prophets", tags: "gone up shout trumpet king",
+    text: "God is gone up with a shout, the LORD with the sound of a trumpet." },
+  { ref: "Psalm 68:1-2, 24-25", section: "Poets & Prophets", tags: "arise enemies scattered goings singers players timbrels march",
+    text: "1 Let God arise, let his enemies be scattered: let them also that hate him flee before him. 2 As smoke is driven away, so drive them away: as wax melteth before the fire, so let the wicked perish at the presence of God. 24 They have seen thy goings, O God; even the goings of my God, my King, in the sanctuary. 25 The singers went before, the players on instruments followed after; among them were the damsels playing with timbrels." },
+  { ref: "Psalm 78:60-61", section: "Poets & Prophets", tags: "shiloh strength captivity glory enemy",
+    text: "60 So that he forsook the tabernacle of Shiloh, the tent which he placed among men; 61 And delivered his strength into captivity, and his glory into the enemy's hand." },
+  { ref: "Psalm 80:1-2", section: "Poets & Prophets", tags: "cherubims shine forth shepherd israel joseph",
+    text: "1 Give ear, O Shepherd of Israel, thou that leadest Joseph like a flock; thou that dwellest between the cherubims, shine forth. 2 Before Ephraim and Benjamin and Manasseh stir up thy strength, and come and save us." },
+  { ref: "Psalm 99:1, 5", section: "Poets & Prophets", tags: "reigneth cherubims footstool worship holy",
+    text: "1 The LORD reigneth; let the people tremble: he sitteth between the cherubims; let the earth be moved. 5 Exalt ye the LORD our God, and worship at his footstool; for he is holy." },
+  { ref: "Psalm 132:7-8", section: "Poets & Prophets", tags: "tabernacles footstool arise rest ark strength",
+    text: "7 We will go into his tabernacles: we will worship at his footstool. 8 Arise, O LORD, into thy rest; thou, and the ark of thy strength." },
+  { ref: "Isaiah 37:16", section: "Poets & Prophets", tags: "hezekiah cherubims king of israel earth",
+    text: "O LORD of hosts, God of Israel, that dwellest between the cherubims, thou art the God, even thou alone, of all the kingdoms of the earth: thou hast made heaven and earth." },
+  { ref: "Jeremiah 3:16-17", section: "Poets & Prophets", tags: "no more remember throne jerusalem nations",
+    text: "16 And it shall come to pass, when ye be multiplied and increased in the land, in those days, saith the LORD, they shall say no more, The ark of the covenant of the LORD: neither shall it come to mind: neither shall they remember it; neither shall they visit it; neither shall that be done any more. 17 At that time they shall call Jerusalem the throne of the LORD; and all the nations shall be gathered unto it, to the name of the LORD, to Jerusalem: neither shall they walk any more after the imagination of their evil heart." },
+  { ref: "Jeremiah 7:12", section: "Poets & Prophets", tags: "shiloh name at the first place trust lying words",
+    text: "But go ye now unto my place which was in Shiloh, where I set my name at the first, and see what I did to it for the wickedness of my people Israel." },
+  { ref: "Lamentations 2:1", section: "Poets & Prophets", tags: "footstool anger cloud zion beauty cast down",
+    text: "How hath the Lord covered the daughter of Zion with a cloud in his anger, and cast down from heaven unto the earth the beauty of Israel, and remembered not his footstool in the day of his anger!" },
+  { ref: "Zechariah 4:9-10", section: "Poets & Prophets", tags: "zerubbabel foundation finish day of small things plummet",
+    text: "9 The hands of Zerubbabel have laid the foundation of this house; his hands shall also finish it; and thou shalt know that the LORD of hosts hath sent me unto you. 10 For who hath despised the day of small things? for they shall rejoice, and shall see the plummet in the hand of Zerubbabel with those seven; they are the eyes of the LORD, which run to and fro through the whole earth." },
+  { ref: "Hebrews 9:1-5", section: "New Testament", tags: "mercyseat censer manna rod tables cherubims",
+    text: "1 Then verily the first covenant had also ordinances of divine service, and a worldly sanctuary. 2 For there was a tabernacle made; the first, wherein was the candlestick, and the table, and the shewbread; which is called the sanctuary. 3 And after the second veil, the tabernacle which is called the Holiest of all; 4 Which had the golden censer, and the ark of the covenant overlaid round about with gold, wherein was the golden pot that had manna, and Aaron's rod that budded, and the tables of the covenant; 5 And over it the cherubims of glory shadowing the mercyseat; of which we cannot now speak particularly." },
+  { ref: "Hebrews 9:11-12, 24", section: "New Testament", tags: "high priest blood once eternal redemption heaven",
+    text: "11 But Christ being come an high priest of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building; 12 Neither by the blood of goats and calves, but by his own blood he entered in once into the holy place, having obtained eternal redemption for us. 24 For Christ is not entered into the holy places made with hands, which are the figures of the true; but into heaven itself, now to appear in the presence of God for us." },
+  { ref: "Hebrews 8:5", section: "New Testament", tags: "example shadow pattern mount",
+    text: "Who serve unto the example and shadow of heavenly things, as Moses was admonished of God when he was about to make the tabernacle: for, See, saith he, that thou make all things according to the pattern shewed to thee in the mount." },
+  { ref: "Revelation 11:19", section: "New Testament", tags: "temple heaven opened ark testament lightnings",
+    text: "And the temple of God was opened in heaven, and there was seen in his temple the ark of his testament: and there were lightnings, and voices, and thunderings, and an earthquake, and great hail." },
+  { ref: "Matthew 27:51", section: "New Testament", tags: "veil rent twain top bottom quake rocks",
+    text: "And, behold, the veil of the temple was rent in twain from the top to the bottom; and the earth did quake, and the rocks rent." },
+  { ref: "Luke 18:13", section: "New Testament", tags: "publican merciful sinner smote breast temple",
+    text: "And the publican, standing afar off, would not lift up so much as his eyes unto heaven, but smote upon his breast, saying, God be merciful to me a sinner." },
+  { ref: "Romans 3:25", section: "New Testament", tags: "propitiation hilasterion mercyseat blood righteousness remission",
+    text: "Whom God hath set forth to be a propitiation through faith in his blood, to declare his righteousness for the remission of sins that are past, through the forbearance of God." },
+  { ref: "Hebrews 2:17", section: "New Testament", tags: "merciful faithful high priest reconciliation sins people",
+    text: "Wherefore in all things it behoved him to be made like unto his brethren, that he might be a merciful and faithful high priest in things pertaining to God, to make reconciliation for the sins of the people." },
+  { ref: "Hebrews 9:8", section: "New Testament", tags: "holy ghost way holiest not yet manifested tabernacle standing",
+    text: "The Holy Ghost this signifying, that the way into the holiest of all was not yet made manifest, while as the first tabernacle was yet standing." },
+  { ref: "Hebrews 10:19-20", section: "New Testament", tags: "boldness enter holiest blood new living way veil flesh",
+    text: "19 Having therefore, brethren, boldness to enter into the holiest by the blood of Jesus, 20 By a new and living way, which he hath consecrated for us, through the veil, that is to say, his flesh." },
+  { ref: "1 John 2:2", section: "New Testament", tags: "propitiation hilasmos sins whole world",
+    text: "And he is the propitiation for our sins: and not for ours only, but also for the sins of the whole world." },
+  { ref: "1 John 4:10", section: "New Testament", tags: "love propitiation sent son beloved",
+    text: "Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins." },
+];
+
+const TIMELINE = [
+  { when: "c. 15th–13th c. BC", title: "The pattern shown on Sinai", text: "Moses is shown the pattern of the tabernacle and its instruments, and told to make them exactly so.", ref: "Exodus 25:8-9, 40" },
+  { when: "At Sinai", title: "Bezaleel makes the ark", text: "Acacia wood overlaid with pure gold within and without; a crown of gold; rings and staves that were never to be removed.", ref: "Exodus 37:1-9" },
+  { when: "First month, second year", title: "The ark set in the tabernacle", text: "The testimony is placed inside; the mercy seat above; the veil hung over it.", ref: "Exodus 40:20-21" },
+  { when: "Wilderness years", title: "The ark goes before them", text: "Carried by the Kohathites, covered with the veil and a cloth wholly of blue, it leads the camp to a resting place.", ref: "Numbers 4:5-6; 10:33" },
+  { when: "Wilderness years", title: "Rise up, LORD", text: "Whenever the ark set forward Moses said, Rise up, LORD, and let thine enemies be scattered; and when it rested, Return, O LORD, unto the many thousands of Israel.", ref: "Numbers 10:35-36" },
+  { when: "At the Jordan", title: "The waters stand on an heap", text: "The priests' feet are dipped in the brim of the water; the river is cut off and Israel passes over on dry ground.", ref: "Joshua 3:14-17" },
+  { when: "Seven days at Jericho", title: "The wall falls flat", text: "The ark compasses the city once daily for six days; on the seventh the trumpets sound and the wall falls.", ref: "Joshua 6:1-20" },
+  { when: "Days of the judges", title: "Kept at Shiloh", text: "The tabernacle and the ark rest at Shiloh, where Samuel is called as a boy.", ref: "Joshua 18:1; 1 Samuel 3:3" },
+  { when: "c. 1050 BC", title: "Taken at Aphek", text: "Israel brings the ark out as a charm; the Philistines rout them and take it. Eli's sons are slain; Ichabod is born.", ref: "1 Samuel 4:1-22" },
+  { when: "Seven months", title: "Dagon falls at Ashdod", text: "The idol is broken before the ark; tumours and mice afflict the Philistine cities; the ark returns on a new cart to Beth-shemesh.", ref: "1 Samuel 5:1-6:18" },
+  { when: "Twenty years", title: "In the house of Abinadab", text: "After many are smitten at Beth-shemesh, the ark rests at Kiriath-jearim until the days of David.", ref: "1 Samuel 6:19-7:2" },
+  { when: "c. 1000 BC", title: "Uzzah, then Obed-edom, then the city of David", text: "The first attempt on a cart ends in death; the ark blesses the house of Obed-edom for three months; then the Levites bear it on their shoulders, and David dances before the LORD.", ref: "2 Samuel 6:1-19" },
+  { when: "c. 960 BC", title: "Into the oracle of the temple", text: "Solomon brings the ark into the most holy place under the wings of the cherubim, and the cloud fills the house.", ref: "1 Kings 8:1-11" },
+  { when: "c. 620 BC", title: "Josiah's final instruction", text: "The Levites are told to put the holy ark in the house of Solomon, that it be no more a burden on their shoulders.", ref: "2 Chronicles 35:3" },
+  { when: "586 BC", title: "The temple burned — and the record falls silent", text: "Nebuchadnezzar takes Jerusalem and burns the house of the LORD. No scriptural text tells where the ark went.", ref: "2 Kings 25:8-17" },
+  { when: "c. 516 BC", title: "The second house — and no ark in the inventory", text: "The returned exiles finish the temple. The vessels of the first house are brought back and counted; the ark appears in no list, and the older men weep at the smaller glory of the new building.", ref: "Ezra 1:7-11; 3:12-13; Haggai 2:3, 9" },
+  { when: "c. 2nd c. BC", title: "Jeremiah, and the cave on the mountain", text: "A deuterocanonical tradition says the prophet hid the tabernacle and the ark until God gathers His people.", ref: "2 Maccabees 2:4-8" },
+  { when: "c. AD 33", title: "The veil of the temple rent in twain", text: "At the death of Christ the curtain that hid the ark is torn from the top to the bottom, and the way into the holiest is opened — through the veil, that is to say, his flesh.", ref: "Matthew 27:51; Hebrews 10:19-20" },
+  { when: "c. AD 95", title: "Seen again — in the temple in heaven", text: "The temple of God is opened in heaven, and the ark of His testament is seen, with lightnings and thunderings.", ref: "Revelation 11:19" },
+];
+
+const TRIVIA = [
+  { q: "Of what wood was the ark of the covenant made?", a: ["Cedar", "Shittim (acacia)", "Olive", "Cypress"], correct: 1,
+    why: "The ark was made of shittim wood — the acacia of the desert, hard and slow to corrupt — overlaid with pure gold.", ref: "Exodus 25:10" },
+  { q: "What were the ark's dimensions?", a: ["Two cubits and a half long, a cubit and a half broad and high", "Three cubits long, two broad, two high", "One cubit and a half long, one cubit broad and high", "Four cubits long, two broad, three high"], correct: 0,
+    why: "Two and a half cubits in length, a cubit and a half in breadth, and a cubit and a half in height.", ref: "Exodus 25:10" },
+  { q: "Which craftsman made the ark?", a: ["Hur", "Aholiab", "Bezaleel", "Eleazar"], correct: 2,
+    why: "Bezaleel the son of Uri, of the tribe of Judah, filled with the spirit of God in wisdom and understanding — Aholiab worked with him.", ref: "Exodus 37:1; 31:1-6" },
+  { q: "According to Hebrews 9:4, which three things were in the ark?", a: ["The tables, the golden pot of manna, and Aaron's rod that budded", "The tables, the ephod, and the censer", "The tables, the book of the law, and the manna", "The tables, the urim and thummim, and the rod"], correct: 0,
+    why: "The golden pot that had manna, Aaron's rod that budded, and the tables of the covenant.", ref: "Hebrews 9:4" },
+  { q: "Yet what does 1 Kings 8:9 say was in the ark at the temple's dedication?", a: ["Nothing but the manna", "Nothing save the two tables of stone", "The tables and the rod", "It does not say"], correct: 1,
+    why: "There was nothing in the ark save the two tables of stone which Moses put there at Horeb.", ref: "1 Kings 8:9" },
+  { q: "What did God say He would do from above the mercy seat?", a: ["Show Moses the promised land", "Meet with Moses and commune with him from between the cherubim", "Send fire to consume the sacrifice", "Give the priests their portion"], correct: 1,
+    why: "And there I will meet with thee, and I will commune with thee from above the mercy seat, from between the two cherubims.", ref: "Exodus 25:22" },
+  { q: "Which tribe was appointed to bear the ark on their shoulders?", a: ["Judah", "Ephraim", "Levi, the sons of Kohath", "Benjamin"], correct: 2,
+    why: "The sons of Kohath were to bear it — but they might not touch any holy thing lest they die. David later brought it up on the Levites' shoulders, as Moses commanded.", ref: "Numbers 4:15; 1 Chronicles 15:15" },
+  { q: "How did the ark cross the Jordan?", a: ["On a new cart", "On the shoulders of the priests, who stood firm in the midst of the river", "On a raft of reeds", "It was carried by the elders of each tribe"], correct: 1,
+    why: "The feet of the priests were dipped in the brim of the water, the waters rose up upon an heap, and the priests stood firm on dry ground in the midst of Jordan while all Israel passed over.", ref: "Joshua 3:14-17" },
+  { q: "Who took hold of the ark when the oxen shook it, and died?", a: ["Obed-edom", "Ahio", "Uzzah", "Abinadab"], correct: 2,
+    why: "At Nachon's threshingfloor Uzzah put forth his hand to the ark, and God smote him there for his error.", ref: "2 Samuel 6:6-7" },
+  { q: "In whose house did the ark remain three months, and the LORD blessed that house?", a: ["Obed-edom the Gittite", "Abinadab of Kiriath-jearim", "Nathan the prophet", "Hiram of Tyre"], correct: 0,
+    why: "The ark continued in the house of Obed-edom the Gittite three months, and the LORD blessed Obed-edom and all his household.", ref: "2 Samuel 6:11" },
+  { q: "What did David do before the LORD when the ark came up to the city?", a: ["He sang a psalm of degrees", "He danced with all his might, girded with a linen ephod", "He fasted seven days", "He sacrificed a thousand oxen every mile"], correct: 1,
+    why: "David danced before the LORD with all his might, and the ark came up with shouting and the sound of the trumpet.", ref: "2 Samuel 6:14-15" },
+  { q: "Where was the ark set in Solomon's temple?", a: ["In the porch before the altar", "In the oracle, the most holy place, under the wings of the cherubim", "In the court of the priests", "In the treasury chamber"], correct: 1,
+    why: "The priests brought in the ark of the covenant of the LORD unto his place, into the oracle of the house, to the most holy place, even under the wings of the cherubims.", ref: "1 Kings 8:6" },
+  { q: "What filled the house when the priests came out of the holy place?", a: ["A pillar of fire", "A wind from the east", "A cloud, so that the priests could not stand to minister", "Silence for the space of an hour"], correct: 2,
+    why: "The cloud filled the house of the LORD, so that the priests could not stand to minister: for the glory of the LORD had filled the house.", ref: "1 Kings 8:10-11" },
+  { q: "Which prophet declared that the ark would no longer be remembered or visited?", a: ["Isaiah", "Ezekiel", "Jeremiah", "Zechariah"], correct: 2,
+    why: "Jeremiah spoke of a day when they should say no more, The ark of the covenant of the LORD — for Jerusalem itself should be called the throne of the LORD.", ref: "Jeremiah 3:16-17" },
+  { q: "Where does Scripture last show us the ark?", a: ["In the temple in heaven, in the vision of Revelation", "Buried in a cave on Nebo", "Loaded onto a ship at Joppa", "In the treasury of Babylon"], correct: 0,
+    why: "The temple of God was opened in heaven, and there was seen in his temple the ark of his testament — with lightnings, and voices, and thunderings.", ref: "Revelation 11:19" },
+  { q: "What was placed BESIDE the ark, as a witness, according to Deuteronomy?", a: ["The golden censer", "The book of the law", "The silver trumpets", "The ephod of the high priest"], correct: 1,
+    why: "Take this book of the law, and put it in the side of the ark of the covenant of the LORD your God, that it may be there for a witness against thee.", ref: "Deuteronomy 31:26" },
+  { q: "According to the Ethiopian tradition, where does the ark rest today?", a: ["In the Church of Our Lady Mary of Zion at Aksum", "In the monastery of Debre Damo", "In the rock churches of Lalibela", "In the Ark of the Covenant Chapel in Addis Ababa"], correct: 0,
+    why: "Ethiopian Orthodox tradition (recorded in the Kebra Nagast) holds that the ark came to Aksum by way of Menelik, son of Solomon and the Queen of Sheba, and that it rests at the Church of Our Lady Mary of Zion under a single guardian monk. It is a living claim of an ancient church — and one never opened to independent examination.", ref: "Tradition, not Scripture" },
+  { q: "What is the Hebrew name of the ark's golden lid, from the root meaning 'to cover' or 'to atone'?", a: ["Aron", "Kapporeth", "Tabnith", "Shittah"], correct: 1,
+    why: "The kapporeth — the mercy seat — from kaphar, to cover, to make atonement. The ark itself was the aron, simply a chest.", ref: "Exodus 25:17" },
+  { q: "What did Moses say when the ark set forward in the wilderness?", a: ["Arise, shine; for thy light is come", "Rise up, LORD, and let thine enemies be scattered", "Stand still, and see the salvation of the LORD", "The LORD is a man of war"], correct: 1,
+    why: "When the ark set forward, Moses said, Rise up, LORD, and let thine enemies be scattered; and when it rested, Return, O LORD, unto the many thousands of Israel. It is the liturgy of the march.", ref: "Numbers 10:35-36" },
+  { q: "Which psalm opens with the very words Moses spoke when the ark set forward?", a: ["Psalm 23", "Psalm 68", "Psalm 91", "Psalm 132"], correct: 1,
+    why: "Psalm 68 opens, Let God arise, let his enemies be scattered — the cry of Numbers 10:35 carried into the Psalter, followed by the procession: the singers before, the players on instruments after.", ref: "Psalm 68:1; Numbers 10:35" },
+  { q: "Where did the tabernacle and the ark stand in relation to the camp of Israel?", a: ["On the eastern edge, before the gate", "On a hill above the camp", "In the midst of the camp, with the Levites around it", "Beyond Jordan, outside the camp"], correct: 2,
+    why: "The tabernacle of the congregation set forward with the camp of the Levites in the midst of the camp — the tribes pitched on four sides, facing inward toward the sanctuary.", ref: "Numbers 2:17" },
+  { q: "What was rent in twain from the top to the bottom at the death of Christ?", a: ["The altar of burnt offering", "The veil of the temple", "The gates of the city", "The pillars of the porch"], correct: 1,
+    why: "And, behold, the veil of the temple was rent in twain from the top to the bottom — the curtain that hid the ark, opened by the blood of Jesus as a new and living way into the holiest.", ref: "Matthew 27:51; Hebrews 10:19-20" },
+  { q: "The word translated 'propitiation' in Romans 3:25 is the same Greek word used in the Old Testament for which part of the ark?", a: ["The staves", "The crown of gold", "The mercy seat (hilasterion)", "The rings of gold"], correct: 2,
+    why: "Hilasterion — the word the Greek Old Testament uses for the kapporeth, the golden lid of the ark. Paul calls Christ our mercy seat, the place where the law is covered and the blood is sprinkled.", ref: "Romans 3:25; Hebrews 9:5" },
+  { q: "In the inventory of vessels that Cyrus restored (Ezra 1), which object of the first temple is conspicuously absent?", a: ["The golden chargers", "The silver basons", "The ark of the covenant", "The knives of the sanctuary"], correct: 2,
+    why: "Ezra numbers five thousand and four hundred vessels of gold and silver — and no ark. Nor is the ark mentioned anywhere in Ezra, Nehemiah, Haggai, Zechariah or Malachi.", ref: "Ezra 1:7-11" },
+  { q: "Which prophet is said, in a deuterocanonical book, to have hidden the tabernacle and the ark in a cave?", a: ["Isaiah", "Jeremiah", "Ezekiel", "Daniel"], correct: 1,
+    why: "2 Maccabees relates that Jeremiah, warned of God, carried the tabernacle and the ark into a cave on the mountain and sealed the entrance, to remain unknown until God gathers His people. It is deuterocanonical, not part of the Hebrew canon.", ref: "2 Maccabees 2:4-8 (deuterocanonical)" },
+  { q: "What did God promise concerning the second house, according to Haggai?", a: ["That the ark would be restored to it", "That it should stand for ever", "That the glory of this latter house should be greater than of the former", "That no enemy should come near it"], correct: 2,
+    why: "The glory of this latter house shall be greater than of the former, saith the LORD of hosts: and in this place will I give peace. The promise of the greater glory is a Person, not a piece of furniture.", ref: "Haggai 2:9" },
+];
+
+const RANKS = [
+  { min: 0.95, name: "Scribe of the Archives", note: "You have kept the testimony with care." },
+  { min: 0.8, name: "Keeper of the Testimony", note: "A diligent and reverent student." },
+  { min: 0.6, name: "Watchman of the Veil", note: "Well-read, and still learning." },
+  { min: 0.4, name: "Pilgrim of the Wilderness", note: "You have begun the journey." },
+  { min: 0, name: "Seeker at the Threshold", note: "The archive awaits your reading." },
+];
+
+const HONORIFICS = [
+  "Seeker",
+  "Brother",
+  "Sister",
+  "Friend",
+  "Student of the Archives",
+  "Pilgrim",
+  "Scholar",
+  "Beloved",
+  "No title — just my name",
+];
+
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+const STORE = { name: "ark.viewer.name", title: "ark.viewer.honorific" };
+
+const cfgText = (node, fallback) => {
+  if (!node) return fallback;
+  const raw = node.evaluateItem !== undefined ? node.evaluateItem : node;
+  return typeof raw === "string" && raw.trim() ? raw.trim() : fallback;
+};
+const CFG = (typeof root !== "undefined" && root && root.arkSiteConfig) || {};
+const HONORIFIC_OPTIONS = HONORIFICS;
+const DEFAULT_HONORIFIC = cfgText(CFG.defaultHonorific, HONORIFICS[0]);
+
+const chCub = (p0, p1, p2, p3, t) => {
+  const m = 1 - t, a = m * m * m, b = 3 * m * m * t, c = 3 * m * t * t, d = t * t * t;
+  return [a * p0[0] + b * p1[0] + c * p2[0] + d * p3[0], a * p0[1] + b * p1[1] + c * p2[1] + d * p3[1]];
+};
+const chTan = (p0, p1, p2, p3, t) => {
+  const m = 1 - t;
+  return [
+    3 * m * m * (p1[0] - p0[0]) + 6 * m * t * (p2[0] - p1[0]) + 3 * t * t * (p3[0] - p2[0]),
+    3 * m * m * (p1[1] - p0[1]) + 6 * m * t * (p2[1] - p1[1]) + 3 * t * t * (p3[1] - p2[1]),
+  ];
+};
+const chNum = (n) => Math.round(n * 10) / 10;
+const chPts = (list) => list.map((p) => chNum(p[0]) + " " + chNum(p[1])).join(" L");
+
+function chWing(o) {
+  if (o.side === undefined) o.side = 1;
+  const n = o.n || 24, lead = [], trail = [];
+  const wAt = (t) => {
+    let w = o.w0 * Math.pow(1 - t, o.pow === undefined ? 0.8 : o.pow);
+    const mw = (o.minW === undefined ? 0.12 : o.minW) * o.w0;
+    if (w < mw) w = mw;
+    if (o.scallop) w *= 1 - o.scallop * (0.5 - 0.5 * Math.cos(2 * Math.PI * (o.scallopN || 4) * t));
+    return w;
+  };
+  const at = (t) => {
+    const B = chCub(o.p0, o.p1, o.p2, o.p3, t);
+    const d = chTan(o.p0, o.p1, o.p2, o.p3, t);
+    const len = Math.hypot(d[0], d[1]) || 1;
+    return { B, N: [(-d[1] / len) * o.side, (d[0] / len) * o.side], T: [d[0] / len, d[1] / len], w: wAt(t) };
+  };
+  for (let i = 0; i <= n; i++) {
+    const s = at(i / n);
+    lead.push(s.B);
+    trail.push([s.B[0] + s.N[0] * s.w, s.B[1] + s.N[1] * s.w]);
+  }
+  const tip = at(1), cap = o.w0 * 0.11;
+  const outline =
+    "M" + chPts(lead) +
+    " Q" + chNum(tip.B[0] + tip.T[0] * cap) + " " + chNum(tip.B[1] + tip.T[1] * cap) + " " +
+    chPts([trail[n]].concat(trail.slice(0, n).reverse())) + " Z";
+  const feathers = (o.feathers || [0.3, 0.55, 0.8]).map((f) => {
+    const pts = [];
+    for (let i = 0; i <= 16; i++) {
+      const s = at(0.1 + (i / 16) * 0.86);
+      pts.push([s.B[0] + s.N[0] * s.w * f, s.B[1] + s.N[1] * s.w * f]);
+    }
+    return "M" + chPts(pts);
+  });
+  return { outline, feathers };
+}
+
+function chStroke(ds, w, col, out) {
+  const ow = out === undefined ? w + 2.6 : out;
+  const body = ds.map((d) => '<path d="' + d + '"/>').join("");
+  return (
+    '<g fill="none" stroke="#2b2109" stroke-width="' + ow + '" stroke-linecap="round" stroke-linejoin="round">' + body + "</g>" +
+    '<g fill="none" stroke="' + col + '" stroke-width="' + w + '" stroke-linecap="round" stroke-linejoin="round">' + body + "</g>"
+  );
+}
+
+function cherubFigSvg() {
+  const inner = chWing({ p0: [47, 113], p1: [54, 70], p2: [106, 22], p3: [170, 50], w0: 32, pow: 0.72, minW: 0.36, side: 1, feathers: [0.34, 0.66] });
+  const outer = chWing({ p0: [50, 112], p1: [34, 86], p2: [10, 56], p3: [-16, 32], w0: 28, pow: 0.62, minW: 0.18, side: 1, feathers: [0.36, 0.7] });
+  const feather = (w, op) => w.feathers.map((d) => '<path d="' + d + '" fill="none" stroke="#f6e6b4" stroke-width="0.7" opacity="' + op + '"/>').join("");
+  return (
+    '<path d="' + outer.outline + '" fill="url(#chWingOut)" stroke="#f6e6b4" stroke-width="0.95" stroke-opacity="0.8"/>' + feather(outer, 0.34) +
+    '<path d="' + inner.outline + '" fill="url(#chWing)" stroke="#f6e6b4" stroke-width="0.95" stroke-opacity="0.75"/>' + feather(inner, 0.4) +
+    '<rect x="40" y="188" width="17" height="12" rx="4.6" fill="url(#chFar)" stroke="#2b2109" stroke-width="0.9"/>' +
+    '<rect x="61" y="188" width="17" height="12" rx="4.6" fill="url(#chFar)" stroke="#2b2109" stroke-width="0.9"/>' +
+    '<path d="M28 190 C30 176 35 163 41 151 C45 143 47 137 46 131 C44 125 43 119 45 112 C47 103 50 97 58 97 C66 97 71 103 73 112 C75 119 74 125 72 131 C71 137 73 143 77 151 C83 163 88 176 90 190 Z" fill="url(#chBody)" stroke="#2b2109" stroke-width="1.15"/>' +
+    '<g fill="none" stroke="#2b2109" stroke-width="0.72" opacity="0.3"><path d="M31 183 C45 189 71 189 86 183"/><path d="M51 138 C47 154 41 171 36 184"/><path d="M58 140 C58 158 58 173 58 187"/><path d="M64 138 C68 154 74 171 79 184"/><path d="M42 156 C49 161 67 161 74 156"/></g>' +
+    '<path d="M45 127 C53 133 64 133 72 127 L71 135 C64 140 53 140 46 134 Z" fill="url(#chBody)" stroke="#2b2109" stroke-width="0.8"/>' +
+    chStroke(["M68 104 Q72 118 74 128 Q82 126 94 120"], 13, "url(#chBody)") +
+    '<path d="M90 118 C89 112 90 106 94 103 C98 100 104 101 106 105 C108 109 107 115 103 119 C99 123 91 123 90 118 Z" fill="url(#chBody)" stroke="#2b2109" stroke-width="0.85"/>' +
+    chStroke(["M92 104 Q92 98 91 93", "M97 101 Q98 95 99 90", "M102 102 Q104 97 106 93"], 3.2, "url(#chBody)", 4.6) +
+    chStroke(["M96 117 Q102 116 105 112"], 3.2, "url(#chBody)", 4.6) +
+    '<g transform="rotate(18 60 95)">' +
+      '<path d="M56 88 L66 89 L66.5 101 L55 101 Z" fill="url(#chBody)" stroke="#2b2109" stroke-width="0.85"/>' +
+      '<g transform="rotate(-8 57 70)"><ellipse cx="57" cy="70" rx="14.6" ry="15.8" fill="url(#chHair)" stroke="#f6e6b4" stroke-width="0.9" stroke-opacity="0.55"/></g>' +
+      '<path d="M72 62 C75 63 77 66 76 69 C80 70 83 72 83 74 C83 75 81 76 78 76 C79 78 80 79 80 80 C80 81 78 82 77 82 C79 83 80 85 80 87 C80 90 77 92 73 93 C67 95 58 94 54 90 C50 86 49 78 50 70 C51 63 60 60 72 62 Z" fill="url(#chBody)" stroke="#2b2109" stroke-width="1"/>' +
+      '<path d="M68 67.4 C70 65.9 73.8 65.9 75.7 67.5 C73.8 69.2 70 69.2 68 67.4 Z" fill="#1d1607"/>' +
+      '<circle cx="72.6" cy="66.8" r="0.65" fill="#fff9e6" opacity="0.7"/>' +
+      '<path d="M67 63.6 C69.6 62.2 73.8 62.4 76 64.2" fill="none" stroke="#2b2109" stroke-width="0.95" opacity="0.5"/>' +
+      '<path d="M77.4 74.4 C78.6 74.8 79.2 75.6 79 76.4" fill="none" stroke="#2b2109" stroke-width="0.6" opacity="0.5"/>' +
+      '<path d="M77.8 80 L79.6 79.8 C79.2 81.6 78.2 82.6 76.6 82.4 Z" fill="#5a4718" opacity="0.75"/>' +
+      '<path d="M59 88 C65 90.4 71 89.4 75 86" fill="none" stroke="#2b2109" stroke-width="0.7" opacity="0.4"/>' +
+    "</g>"
+  );
+}
+
+function arkSvg() {
+  return `
+<svg id="arkArt" viewBox="0 0 440 320" role="img" aria-label="An engraved plate of the ark of the covenant: a chest overlaid with gold, crowned with a moulding of gold, closed by the solid gold mercy seat, two cherubim of beaten gold at the two ends of the seat with their wings stretched on high over it, and two long staves of gilded wood passing through golden rings fixed at the corners.">
+  <defs>
+    <radialGradient id="ambient" cx="50%" cy="46%" r="70%">
+      <stop offset="0%" stop-color="#2a1160" stop-opacity="0.48"/>
+      <stop offset="40%" stop-color="#180b3c" stop-opacity="0.24"/>
+      <stop offset="76%" stop-color="#0a0520" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#04030a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="warm" cx="50%" cy="72%" r="56%">
+      <stop offset="0%" stop-color="#5a4416" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#2a1f08" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#04030a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ground" cx="50%" cy="45%" r="72%">
+      <stop offset="0%" stop-color="#080614"/>
+      <stop offset="64%" stop-color="#05040e"/>
+      <stop offset="100%" stop-color="#04030a"/>
+    </radialGradient>
+    <radialGradient id="shekinah" cx="50%" cy="70%" r="62%">
+      <stop offset="0%" stop-color="#fff6dd" stop-opacity="0.22"/>
+      <stop offset="32%" stop-color="#f0d79a" stop-opacity="0.11"/>
+      <stop offset="70%" stop-color="#9a7bf0" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#9a7bf0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcbe78"/>
+      <stop offset="34%" stop-color="#bd9948"/>
+      <stop offset="70%" stop-color="#8a6c2c"/>
+      <stop offset="100%" stop-color="#4d3c15"/>
+    </linearGradient>
+    <linearGradient id="goldTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6d5623"/>
+      <stop offset="22%" stop-color="#f2e0ad"/>
+      <stop offset="56%" stop-color="#d0a94f"/>
+      <stop offset="100%" stop-color="#5f4a1c"/>
+    </linearGradient>
+    <linearGradient id="seatGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf6df"/>
+      <stop offset="22%" stop-color="#e2c785"/>
+      <stop offset="66%" stop-color="#a98a3e"/>
+      <stop offset="100%" stop-color="#54421a"/>
+    </linearGradient>
+    <linearGradient id="poleNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e9d192"/>
+      <stop offset="44%" stop-color="#ab893a"/>
+      <stop offset="100%" stop-color="#3f3112"/>
+    </linearGradient>
+    <linearGradient id="poleFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8c7233"/>
+      <stop offset="58%" stop-color="#57441b"/>
+      <stop offset="100%" stop-color="#181206"/>
+    </linearGradient>
+    <linearGradient id="ringFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf3d6"/>
+      <stop offset="50%" stop-color="#d9b45a"/>
+      <stop offset="100%" stop-color="#5f4a1c"/>
+    </linearGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f712f"/>
+      <stop offset="42%" stop-color="#f0dca6"/>
+      <stop offset="100%" stop-color="#5f4a1c"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0.1" y1="1" x2="0.4" y2="0">
+      <stop offset="0%" stop-color="#3f3112"/>
+      <stop offset="40%" stop-color="#9c7d34"/>
+      <stop offset="76%" stop-color="#e5cd90"/>
+      <stop offset="100%" stop-color="#fdf6df"/>
+    </linearGradient>
+    <linearGradient id="lug" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2c785"/>
+      <stop offset="60%" stop-color="#a5863a"/>
+      <stop offset="100%" stop-color="#5f4a1c"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9a7bf0" stop-opacity="0.4"/>
+      <stop offset="48%" stop-color="#d9b45a" stop-opacity="0.46"/>
+      <stop offset="100%" stop-color="#6b8bff" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="roundL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#120c02" stop-opacity="0.62"/>
+      <stop offset="30%" stop-color="#120c02" stop-opacity="0.03"/>
+      <stop offset="70%" stop-color="#120c02" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#120c02" stop-opacity="0.62"/>
+    </linearGradient>
+    <linearGradient id="fadeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="7%" stop-color="#fff"/>
+      <stop offset="93%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+    <pattern id="hatchA" width="4.6" height="4.6" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <line x1="0" y1="0" x2="0" y2="4.6" stroke="#201703" stroke-width="0.9" opacity="0.42"/>
+    </pattern>
+    <pattern id="hatchB" width="3.4" height="3.4" patternUnits="userSpaceOnUse" patternTransform="rotate(-34)">
+      <line x1="0" y1="0" x2="0" y2="3.4" stroke="#180f01" stroke-width="0.65" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="chWing" gradientUnits="userSpaceOnUse" x1="60" y1="120" x2="196" y2="22">
+      <stop offset="0%" stop-color="#6d5623"/>
+      <stop offset="42%" stop-color="#a68a41"/>
+      <stop offset="100%" stop-color="#e3c276"/>
+    </linearGradient>
+    <linearGradient id="chWingOut" gradientUnits="userSpaceOnUse" x1="50" y1="120" x2="-20" y2="28">
+      <stop offset="0%" stop-color="#6b5326"/>
+      <stop offset="32%" stop-color="#a1853d"/>
+      <stop offset="100%" stop-color="#e2c073"/>
+    </linearGradient>
+    <linearGradient id="chBody" gradientUnits="userSpaceOnUse" x1="44" y1="58" x2="120" y2="200">
+      <stop offset="0%" stop-color="#f7e9bd"/>
+      <stop offset="40%" stop-color="#f2dda6"/>
+      <stop offset="80%" stop-color="#d8b467"/>
+      <stop offset="100%" stop-color="#b18f42"/>
+    </linearGradient>
+    <linearGradient id="chFar" gradientUnits="userSpaceOnUse" x1="46" y1="60" x2="120" y2="196">
+      <stop offset="0%" stop-color="#bd9a4c"/>
+      <stop offset="100%" stop-color="#7a5f26"/>
+    </linearGradient>
+    <linearGradient id="chHair" gradientUnits="userSpaceOnUse" x1="52" y1="52" x2="84" y2="96">
+      <stop offset="0%" stop-color="#e3c17c"/>
+      <stop offset="45%" stop-color="#a8863a"/>
+      <stop offset="100%" stop-color="#5a4718"/>
+    </linearGradient>
+    <g id="cherubFig">${cherubFigSvg()}</g>
+    <mask id="edgeFade">
+      <rect x="0" y="0" width="440" height="320" fill="url(#fadeGrad)"/>
+    </mask>
+  </defs>
+
+  <rect x="0" y="0" width="440" height="320" fill="url(#ground)"/>
+  <ellipse cx="220" cy="150" rx="204" ry="146" fill="url(#ambient)"/>
+  <ellipse cx="220" cy="230" rx="150" ry="66" fill="url(#warm)"/>
+
+  <rect x="13.5" y="13.5" width="413" height="293" fill="none" stroke="url(#rule)" stroke-width="1" opacity="0.46"/>
+  <rect x="19.5" y="19.5" width="401" height="281" fill="none" stroke="url(#rule)" stroke-width="0.6" opacity="0.2"/>
+  <g stroke="url(#rule)" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M13.5 33 L13.5 13.5 L33 13.5"/>
+    <path d="M427 33 L427 13.5 L407 13.5"/>
+    <path d="M13.5 287 L13.5 306.5 L33 306.5"/>
+    <path d="M427 287 L427 306.5 L407 306.5"/>
+  </g>
+
+  <ellipse cx="220" cy="296" rx="150" ry="9" fill="#02010a" opacity="0.85"/>
+
+  <g mask="url(#edgeFade)">
+    <rect x="2" y="234.8" width="436" height="5.8" rx="2.9" fill="url(#poleFar)"/>
+    <rect x="2" y="234.8" width="436" height="1.7" rx="0.85" fill="#c9a552" opacity="0.3"/>
+    <rect x="2" y="239.5" width="436" height="1.1" fill="#120c02" opacity="0.55"/>
+    <rect x="2" y="236.4" width="436" height="3.1" fill="#120c02" opacity="0.34"/>
+    <rect x="2" y="234.3" width="436" height="0.9" fill="#151004" opacity="0.9"/>
+    <rect x="2" y="240.7" width="436" height="0.9" fill="#0b0802" opacity="0.9"/>
+  </g>
+
+  <ellipse cx="220" cy="118" rx="40" ry="38" fill="url(#shekinah)"/>
+
+  <g>
+    <rect x="136" y="250" width="168" height="6.4" fill="url(#goldTop)" opacity="0.8"/>
+    <rect x="136" y="256.4" width="168" height="1.6" fill="#140e02" opacity="0.85"/>
+    <rect x="138" y="192" width="164" height="58.4" fill="url(#goldBody)"/>
+    <rect x="138" y="192" width="164" height="58.4" fill="url(#roundL)"/>
+    <rect x="138" y="192" width="164" height="58.4" fill="url(#hatchA)" opacity="0.34"/>
+    <rect x="138" y="192" width="164" height="58.4" fill="url(#hatchB)" opacity="0.2"/>
+    <g stroke="#40310f" stroke-width="0.9" opacity="0.5">
+      <path d="M192.7 192 L192.7 250"/>
+      <path d="M247.3 192 L247.3 250"/>
+      <path d="M138 221 L302 221"/>
+      <path d="M138 220 L302 220" opacity="0.45"/>
+      <path d="M140 195.4 L300 195.4" opacity="0.35"/>
+      <path d="M140 246.6 L300 246.6" opacity="0.3"/>
+    </g>
+    <g fill="url(#lug)" stroke="#241a06" stroke-width="0.8">
+      <path d="M128 244 L148 244 L146.5 258 L129.5 258 Z"/>
+      <path d="M292 244 L312 244 L310.5 258 L293.5 258 Z"/>
+    </g>
+    <rect x="138" y="192" width="164" height="58.4" fill="none" stroke="#140e02" stroke-width="1.2" opacity="0.9"/>
+  </g>
+
+  <g>
+    <rect x="133" y="183.6" width="174" height="10.4" rx="1.4" fill="url(#goldTop)"/>
+    <rect x="133" y="183.6" width="174" height="2.4" rx="1.2" fill="#fdf6df" opacity="0.8"/>
+    <rect x="133" y="192.6" width="174" height="1.4" fill="#140e02" opacity="0.8"/>
+    <rect x="133" y="183.6" width="174" height="10.4" fill="url(#hatchB)" opacity="0.4"/>
+    <g stroke="#4a3a15" stroke-width="0.7" opacity="0.5">
+      <path d="M140 186.2 L140 192.4"/>
+      <path d="M152 186.2 L152 192.4"/>
+      <path d="M164 186.2 L164 192.4"/>
+      <path d="M276 186.2 L276 192.4"/>
+      <path d="M288 186.2 L288 192.4"/>
+      <path d="M300 186.2 L300 192.4"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="130" y="172.6" width="180" height="11.8" rx="1.2" fill="url(#seatGold)"/>
+    <rect x="130" y="172.6" width="180" height="2.6" rx="1.2" fill="#fdf6df" opacity="0.92"/>
+    <rect x="130" y="175.4" width="180" height="1" fill="#fffaf0" opacity="0.35"/>
+    <rect x="130" y="183.2" width="180" height="1.2" fill="#241a06" opacity="0.75"/>
+    <rect x="130" y="172.6" width="180" height="11.8" fill="url(#hatchB)" opacity="0.26"/>
+    <rect x="130" y="172.6" width="180" height="11.8" fill="none" stroke="#3f3112" stroke-width="0.8" opacity="0.7"/>
+  </g>
+
+  <g mask="url(#edgeFade)">
+    <circle cx="138" cy="252" r="8.4" fill="#2a2008"/>
+    <circle cx="302" cy="252" r="8.4" fill="#2a2008"/>
+    <rect x="2" y="247.8" width="436" height="8" rx="4" fill="url(#poleNear)"/>
+    <rect x="2" y="247.8" width="436" height="8" rx="4" fill="url(#hatchA)" opacity="0.2"/>
+    <rect x="2" y="247.8" width="436" height="2.1" rx="1.05" fill="#fdf6df" opacity="0.24"/>
+    <rect x="2" y="253.9" width="436" height="1.6" fill="#120c02" opacity="0.6"/>
+    <rect x="2" y="247.3" width="436" height="0.9" fill="#1a1203" opacity="0.85"/>
+    <rect x="2" y="255.3" width="436" height="0.9" fill="#0d0801" opacity="0.9"/>
+    <circle cx="138" cy="252" r="11.6" fill="none" stroke="url(#ringFace)" stroke-width="3.8"/>
+    <circle cx="302" cy="252" r="11.6" fill="none" stroke="url(#ringFace)" stroke-width="3.8"/>
+    <rect x="125.4" y="251.2" width="25.2" height="4.8" fill="url(#poleNear)"/>
+    <rect x="289.4" y="251.2" width="25.2" height="4.8" fill="url(#poleNear)"/>
+    <rect x="125.4" y="254.6" width="25.2" height="1.4" fill="#120c02" opacity="0.5"/>
+    <rect x="289.4" y="254.6" width="25.2" height="1.4" fill="#120c02" opacity="0.5"/>
+  </g>
+
+<g>
+    <use href="#cherubFig" transform="translate(112.6,36.6) scale(0.68)"/>
+    <g transform="translate(440,0) scale(-1,1)">
+      <use href="#cherubFig" transform="translate(112.6,36.6) scale(0.68)"/>
+    </g>
+  </g>
+</svg>`;
+}
+
+function renderHero() {
+  $("#arkArtCtn").innerHTML = arkSvg();
+  $("#factRow").innerHTML = HERO_FACTS.map(
+    (f) => `<div class="fact"><span class="fact-k">${esc(f.k)}</span><span class="fact-v">${esc(f.v)}</span><span class="fact-r">${esc(f.r)}</span></div>`
+  ).join("");
+}
+
+function renderArticles() {
+  $("#articleGrid").innerHTML = ARTICLES.map(
+    (a) => `
+    <article class="card" data-id="${esc(a.id)}" tabindex="0" role="button" aria-label="Read ${esc(a.title)}">
+      <div class="card-no">${esc(a.no)}</div>
+      <h3 class="card-title">${esc(a.title)}</h3>
+      <p class="card-sub">${esc(a.subtitle)}</p>
+      <div class="chips">${a.refs.map((r) => `<span class="chip">${esc(r)}</span>`).join("")}</div>
+      <span class="card-cta">Read the article</span>
+    </article>`
+  ).join("");
+}
+
+function blockHtml(b) {
+  if (b.t === "p") return `<p>${b.x}</p>`;
+  if (b.t === "h") return `<h4 class="blk-h">${esc(b.x)}</h4>`;
+  if (b.t === "q") return `<blockquote><p>${b.x}</p><cite>${esc(b.ref || "")}</cite></blockquote>`;
+  if (b.t === "note") return `<aside class="blk-note">${b.x}</aside>`;
+  if (b.t === "list") return `<ul class="blk-list">${b.items.map((i) => `<li>${i}</li>`).join("")}</ul>`;
+  if (b.t === "tiers")
+    return `<div class="tiers">${b.items
+      .map(
+        (i) => `<div class="tier">
+          <div class="tier-head"><span class="tier-name">${esc(i.tier)}</span><span class="tier-badge">${esc(i.badge)}</span></div>
+          <h5>${esc(i.title)}</h5><p>${i.x}</p></div>`
+      )
+      .join("")}</div>`;
+  return "";
+}
+
+let lastFocus = null;
+function openArticle(id) {
+  const a = ARTICLES.find((x) => x.id === id);
+  if (!a) return;
+  lastFocus = document.activeElement;
+  $("#readerBody").innerHTML = `
+    <div class="reader-mark">Article ${esc(a.no)}</div>
+    <h2 class="reader-title">${esc(a.title)}</h2>
+    <p class="reader-sub">${esc(a.subtitle)}</p>
+    <div class="chips">${a.refs.map((r) => `<span class="chip">${esc(r)}</span>`).join("")}</div>
+    <div class="reader-text">${a.body.map(blockHtml).join("")}</div>
+    <p class="reader-end">— end of article ${esc(a.no)} —</p>`;
+  $("#reader").hidden = false;
+  document.body.classList.add("locked");
+  $("#reader").scrollTop = 0;
+  $("#readerClose").focus();
+}
+function closeArticle() {
+  $("#reader").hidden = true;
+  document.body.classList.remove("locked");
+  if (lastFocus) lastFocus.focus();
+}
+
+function renderScriptures(filter = "") {
+  const q = filter.trim().toLowerCase();
+  const hits = SCRIPTURES.filter(
+    (s) => !q || s.ref.toLowerCase().includes(q) || s.text.toLowerCase().includes(q) || s.tags.includes(q) || s.section.toLowerCase().includes(q)
+  );
+  $("#scriptCount").textContent = q
+    ? `${hits.length} of ${SCRIPTURES.length} passages match "${filter.trim()}"`
+    : `${SCRIPTURES.length} passages indexed`;
+  if (!hits.length) {
+    $("#scriptureList").innerHTML = `<p class="empty">No passage found. Try a word such as <em>cherubim</em>, <em>mercy</em>, <em>gold</em>, or a reference such as <em>1 Samuel 5</em>.</p>`;
+    return;
+  }
+  const groups = [];
+  for (const s of hits) {
+    let g = groups.find((x) => x.name === s.section);
+    if (!g) groups.push((g = { name: s.section, items: [] }));
+    g.items.push(s);
+  }
+  $("#scriptureList").innerHTML = groups
+    .map(
+      (g) => `<section class="scr-group"><h4 class="scr-group-h">${esc(g.name)}</h4>${g.items
+        .map(
+          (s) => `<details class="verse"><summary><span class="v-ref">${esc(s.ref)}</span><span class="v-open">open</span></summary>
+            <p class="v-text">${esc(s.text)}</p></details>`
+        )
+        .join("")}</section>`
+    )
+    .join("");
+}
+
+function renderTimeline() {
+  $("#timelineList").innerHTML = TIMELINE.map(
+    (t) => `<li class="tl-item">
+      <div class="tl-dot" aria-hidden="true"></div>
+      <div class="tl-card">
+        <span class="tl-when">${esc(t.when)}</span>
+        <h4>${esc(t.title)}</h4>
+        <p>${esc(t.text)}</p>
+        <span class="tl-ref">${esc(t.ref)}</span>
+      </div></li>`
+  ).join("");
+}
+
+function honorificLabel(title, name) {
+  if (!title || title.startsWith("No title")) return name;
+  return `${title} ${name}`;
+}
+
+const quiz = { order: [], i: 0, score: 0, answered: false, missed: [] };
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function startQuiz() {
+  quiz.order = shuffle(TRIVIA);
+  quiz.i = 0;
+  quiz.score = 0;
+  quiz.missed = [];
+  quiz.answered = false;
+  $("#quizIntro").hidden = true;
+  $("#quizResult").hidden = true;
+  $("#quizPlay").hidden = false;
+  paintQuestion();
+}
+
+function alignToStart(el) {
+  if (!el || el.hidden) return;
+  requestAnimationFrame(() => {
+    const pad = scrollPadding();
+    const top = el.getBoundingClientRect().top;
+    if (top < pad - 6 || top > pad + 90) {
+      window.scrollBy({ top: top - pad, behavior: "smooth" });
+    }
+  });
+}
+
+function focusQuietly(el) {
+  if (el && typeof el.focus === "function") {
+    try { el.focus({ preventScroll: true }); } catch (e) { el.focus(); }
+  }
+}
+
+function scrollPadding() {
+  return parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+}
+
+function revealQuizControls() {
+  const next = $("#quizNext");
+  const head = $("#quizQ");
+  if (!next || next.hidden || !head) return;
+  const over = next.getBoundingClientRect().bottom + 16 - window.innerHeight;
+  if (over <= 0) return;
+  const keepHeadVisible = Math.max(0, head.getBoundingClientRect().top - scrollPadding() - 12);
+  const delta = Math.min(over, keepHeadVisible);
+  if (delta > 8) window.scrollBy({ top: delta, behavior: "smooth" });
+}
+
+function paintQuestion() {
+  const q = quiz.order[quiz.i];
+  const name = localStorage.getItem(STORE.name) || "";
+  const title = localStorage.getItem(STORE.title) || "";
+  $("#quizProgress").style.width = `${(quiz.i / quiz.order.length) * 100}%`;
+  $("#quizCount").textContent = `Question ${quiz.i + 1} of ${quiz.order.length}`;
+  $("#quizScore").textContent = `Score: ${quiz.score}`;
+  $("#quizWho").textContent = name ? `In the name of ${honorificLabel(title, name)}` : "";
+  $("#quizQ").textContent = q.q;
+  const letters = ["A", "B", "C", "D"];
+  $("#quizOpts").innerHTML = q.a
+    .map((opt, idx) => `<button class="opt" data-i="${idx}"><span class="opt-k">${letters[idx]}</span><span class="opt-v">${esc(opt)}</span></button>`)
+    .join("");
+  $("#quizWhy").hidden = true;
+  $("#quizWhy").innerHTML = "";
+  $("#quizNext").hidden = true;
+  quiz.answered = false;
+  if (quiz.i > 0) alignToStart($("#quizPlay"));
+  focusQuietly($("#quizQ"));
+}
+
+function answer(idx) {
+  if (quiz.answered) return;
+  quiz.answered = true;
+  const q = quiz.order[quiz.i];
+  const btns = $$("#quizOpts .opt");
+  btns.forEach((b, i) => {
+    b.disabled = true;
+    if (i === q.correct) b.classList.add("is-correct");
+    else if (i === idx) b.classList.add("is-wrong");
+  });
+  if (idx === q.correct) quiz.score++;
+  else quiz.missed.push(q);
+  $("#quizScore").textContent = `Score: ${quiz.score}`;
+  const why = $("#quizWhy");
+  why.innerHTML = `<p class="why-verdict">${idx === q.correct ? "Correct." : "Not so — the answer is " + esc(q.a[q.correct]) + "."}</p>
+    <p class="why-text">${esc(q.why)}</p><span class="why-ref">${esc(q.ref)}</span>`;
+  why.hidden = false;
+  const next = $("#quizNext");
+  next.textContent = quiz.i === quiz.order.length - 1 ? "See the result" : "Next question";
+  next.hidden = false;
+  requestAnimationFrame(revealQuizControls);
+  focusQuietly(next);
+}
+
+function finishQuiz() {
+  const total = quiz.order.length;
+  const frac = quiz.score / total;
+  const rank = RANKS.find((r) => frac >= r.min);
+  const name = localStorage.getItem(STORE.name) || "";
+  const title = localStorage.getItem(STORE.title) || "";
+  $("#quizPlay").hidden = true;
+  $("#quizIntro").hidden = true;
+  $("#quizResult").hidden = false;
+  $("#quizResult").innerHTML = `
+    <div class="result-mark">Result</div>
+    <h3 class="result-who">${esc(honorificLabel(title, name))}</h3>
+    <p class="result-score">${quiz.score} <span>of ${total}</span></p>
+    <p class="result-rank">${esc(rank.name)}</p>
+    <p class="result-note">${esc(rank.note)}</p>
+    ${
+      quiz.missed.length
+        ? `<div class="result-missed"><h4>Worth reading again</h4><ul>${quiz.missed
+            .map((m) => `<li><span>${esc(m.q)}</span><em>${esc(m.ref)}</em></li>`)
+            .join("")}</ul></div>`
+        : `<p class="result-perfect">A clean sweep of the testimony.</p>`
+    }
+    <div class="result-actions">
+      <button class="btn btn-primary" id="quizAgain">Test again</button>
+      <a class="btn btn-ghost" href="#articles">Return to the articles</a>
+    </div>`;
+  $("#quizAgain").addEventListener("click", () => {
+    $("#quizResult").hidden = true;
+    $("#quizIntro").hidden = false;
+  });
+  alignToStart($("#quizResult"));
+}
+
+function paintGate() {
+  const name = localStorage.getItem(STORE.name) || "";
+  const title = localStorage.getItem(STORE.title) || "";
+  if (name) {
+    $("#gate").hidden = true;
+    $("#quizArea").hidden = false;
+    $("#greetWho").textContent = honorificLabel(title, name);
+    $("#quizIntro").hidden = false;
+    $("#quizPlay").hidden = true;
+    $("#quizResult").hidden = true;
+  } else {
+    $("#gate").hidden = false;
+    $("#quizArea").hidden = true;
+    $("#viewerName").value = "";
+  }
+}
+
+function applyStyle() {
+  $("#countArticles").textContent = ARTICLES.length;
+  $("#countScriptures").textContent = SCRIPTURES.length;
+  $("#countTrivia").textContent = TRIVIA.length;
+  $("#quizIntroCount").textContent = TRIVIA.length;
+  $("#footArticles").textContent = ARTICLES.length;
+  $("#footScriptures").textContent = SCRIPTURES.length;
+  $("#footTrivia").textContent = TRIVIA.length;
+}
+
+function initNavHighlight() {
+  const links = $$(".nav-link");
+  const targets = links.map((l) => $(l.getAttribute("href"))).filter(Boolean);
+  const update = () => {
+    const y = window.innerHeight * 0.32;
+    let current = targets[0];
+    for (const t of targets) {
+      if (t.getBoundingClientRect().top <= y) current = t;
+    }
+    links.forEach((l) => l.classList.toggle("active", current && l.getAttribute("href") === "#" + current.id));
+  };
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+}
+
+function initReveal() {
+  const items = $$(".reveal");
+  const check = () => {
+    const y = window.innerHeight * 0.92;
+    items.forEach((el) => {
+      if (el.getBoundingClientRect().top < y) el.classList.add("in");
+    });
+  };
+  window.addEventListener("scroll", check, { passive: true });
+  window.addEventListener("resize", check);
+  check();
+  setTimeout(check, 400);
+}
+
+function initProgress() {
+  const bar = $("#progressBar");
+  const update = () => {
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = `scaleX(${h > 0 ? Math.min(1, window.scrollY / h) : 0})`;
+  };
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+}
+
+function init() {
+  renderHero();
+  renderArticles();
+  renderScriptures("");
+  renderTimeline();
+  applyStyle();
+  $("#heroSub").textContent = cfgText(CFG.subtitle, SITE.subtitle);
+  $("#heroDedication").textContent = cfgText(CFG.dedication, SITE.dedication);
+  $("#viewerTitle").innerHTML = HONORIFIC_OPTIONS.map((h) => `<option value="${esc(h)}">${esc(h)}</option>`).join("");
+  $("#viewerTitle").value = DEFAULT_HONORIFIC;
+  paintGate();
+
+  $("#articleGrid").addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (card) openArticle(card.dataset.id);
+  });
+  $("#articleGrid").addEventListener("keydown", (e) => {
+    const card = e.target.closest(".card");
+    if (card && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      openArticle(card.dataset.id);
+    }
+  });
+  $("#readerClose").addEventListener("click", closeArticle);
+  $("#reader").addEventListener("click", (e) => {
+    if (e.target.id === "reader") closeArticle();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !$("#reader").hidden) closeArticle();
+  });
+
+  $("#scriptSearch").addEventListener("input", (e) => renderScriptures(e.target.value));
+
+  $("#gateForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const raw = $("#viewerName").value.trim().slice(0, 40);
+    if (!raw) {
+      $("#gateError").textContent = "The archive asks for a name before the trivia is opened.";
+      $("#viewerName").focus();
+      return;
+    }
+    $("#gateError").textContent = "";
+    localStorage.setItem(STORE.name, raw);
+    localStorage.setItem(STORE.title, $("#viewerTitle").value);
+    paintGate();
+    $("#quizArea").scrollIntoView({ block: "start", behavior: "smooth" });
+  });
+  $("#changeName").addEventListener("click", () => {
+    localStorage.removeItem(STORE.name);
+    localStorage.removeItem(STORE.title);
+    $("#quizPlay").hidden = true;
+    $("#quizResult").hidden = true;
+    paintGate();
+    $("#viewerName").focus();
+  });
+  $("#quizStart").addEventListener("click", startQuiz);
+  $("#quizOpts").addEventListener("click", (e) => {
+    const b = e.target.closest(".opt");
+    if (b && !b.disabled) answer(Number(b.dataset.i));
+  });
+  $("#quizNext").addEventListener("click", () => {
+    if (quiz.i === quiz.order.length - 1) finishQuiz();
+    else {
+      quiz.i++;
+      paintQuestion();
+    }
+  });
+
+  initNavHighlight();
+  initReveal();
+  initProgress();
+  const year = $("#year");
+  if (year) year.textContent = new Date().getFullYear();
+}
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+else init();
+</script>
+
+</body>
+</html>
